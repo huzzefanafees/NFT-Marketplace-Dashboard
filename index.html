@@ -1,944 +1,1399 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NFT Marketplace</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body>
     <!-- All Content container -->
     <div class="container">
-        <!-- aside of the container -->
-        <div class="aside">
-            <div class="icons">
-                <a href="" class="Logo">
-                    <img src="images/Logo-light.svg" alt="Logo-light">
-                </a>
-                <button class="icon bg-white tab-btn active">
-                    <span class="material-symbols-sharp">
-                        grid_view
-                        </span>
-                </button>
-                <button class="icon bg-white tab-btn">
-                    <span class="material-symbols-sharp">
-                        assignment
-                        </span>
-                </button>
-                <button class="icon bg-white tab-btn">
-                    <span class="material-symbols-sharp">
-                        favorite
-                        </span>
-                </button>
-                <button class="icon bg-white tab-btn">
-                    <span class="material-symbols-sharp">
-                        star
-                        </span>
-                </button>
-                <button class="icon bg-white tab-btn">
-                    <span class="material-symbols-sharp">
-                        account_circle
-                        </span>
-                </button>
-                <button class="icon bg-white tab-btn">
-                    <span class="material-symbols-sharp">
-                        settings
-                        </span>
-                </button>
-            </div>
-            <div class="icons bg-white last-icon">
-                <a href="">
-                    <img src="images/sign-out.svg" alt="sign-out">
-                </a>
-            </div>
+      <!-- aside of the container -->
+      <div class="aside">
+        <a href="" class="logo-big">
+          <img src="images/Logo-light.svg" alt="Logo-light" />
+        </a>
+        <button class="icon bg-white tab-btn active">
+          <span class="material-symbols-sharp"> grid_view </span>
+        </button>
+        <button class="icon bg-white tab-btn">
+          <span class="material-symbols-sharp"> assignment </span>
+        </button>
+        <button class="icon bg-white tab-btn">
+          <span class="material-symbols-sharp"> favorite </span>
+        </button>
+        <button class="icon bg-white tab-btn">
+          <span class="material-symbols-sharp"> star </span>
+        </button>
+        <button class="icon bg-white tab-btn">
+          <span class="material-symbols-sharp"> account_circle </span>
+        </button>
+        <button class="icon bg-white tab-btn">
+          <span class="material-symbols-sharp"> settings </span>
+        </button>
+        <a href="">
+          <img src="images/sign-out.svg" alt="sign-out" />
+        </a>
+      </div>
+      <!-- aside ends here -->
+      <!-- Main container -->
+      <div class="main">
+        <!-- Top Starts here -->
+        <div class="top">
+          <div class="logo-small">
+            <img src="images/Logo-light.svg" alt="" class="logo" />
+          </div>
+          <div class="search">
+            <span class="material-symbols-sharp search-icon">search</span>
+            <input type="search" placeholder="Search Here" class="top-input" />
+          </div>
+          <div class="profile">
+            <button class="dark theme theme1 active">
+              <span class="material-symbols-sharp theme-toggler"
+                >dark_mode</span
+              >
+            </button>
+            <button class="light theme theme2">
+              <span class="material-symbols-sharp theme-toggler"
+                >light_mode</span
+              >
+            </button>
+            <a href=""
+              ><span class="material-symbols-sharp">notifications</span></a
+            >
+            <a href=""><img src="images/id-avatar.png" alt="id-avatar" /></a>
+          </div>
         </div>
-        <!-- aside ends here -->
-        <!-- Main container -->
-        <div class="main">
-            <!-- Top Starts here -->
-            <div class="top">
-                <div class="search">
-                    <span class="material-symbols-sharp search-icon">search</span>
-                    <input type="search" placeholder="Search Here" class="top-input">
+        <!-- Top ends here -->
+        <!-- Home Page Starts here -->
+        <div class="content-box">
+          <div class="home content active">
+            <!-- Section 1 starts here -->
+            <div class="section1">
+              <div class="sec1-left">
+                <h1>Discover, Collect, Sell and Create your NFT</h1>
+                <p>
+                  Digital marketplace for crypto collectibles and non fungable
+                  tokens
+                </p>
+                <div class="buttons">
+                  <button class="button button1">Explore</button>
+                  <button class="button button2">Create</button>
                 </div>
-                <div class="profile">
-                    <button class="dark theme theme1 active">
-                        <span class="material-symbols-sharp theme-toggler">dark_mode</span>
-                    </button>
-                    <button class="light theme theme2">
-                        <span class="material-symbols-sharp theme-toggler">light_mode</span>
-                    </button>
-                    <a href=""><span class="material-symbols-sharp">notifications</span></a>
-                    <a href=""><img src="images/id-avatar.png" alt="id-avatar"></a>
+              </div>
+              <div class="sec1-right">
+                <div class="sec1-right-nft">
+                  <img src="images/NFT.png" alt="" />
                 </div>
+                <div class="sec1-right-nft-detail">
+                  <div class="sec1-detail-top">
+                    <img src="images/sec1-avatar.png" alt="sec1-avatar" />
+                    <h3>John Abraham</h3>
+                    <img src="images/Online.svg" alt="Online" />
+                  </div>
+                  <h2>Birghten LQ</h2>
+                  <div class="sec1-detail-middle">
+                    <p>Auction time</p>
+                    <p>
+                      Current Bid <span style="color: white">:</span>
+                      <span class="primary">0.05 ETH</span>
+                    </p>
+                  </div>
+                  <div class="sec1-detail-bottom">
+                    <p class="iris">3h 1m 50s</p>
+                    <p class="iris">0.15 ETH</p>
+                  </div>
+                  <div class="buttons">
+                    <button class="button button1">Explore</button>
+                    <button class="button button2">Create</button>
+                  </div>
+                </div>
+              </div>
             </div>
-            <!-- Top ends here -->
-            <!-- Home Section Starts here -->
-            <div class="content-box">
-                <div class="home content active">
-                    <!-- Section 1 starts here -->
-               <div class="section1">
-                   <div class="sec1-left">
-                       <h1>Discover, Collect, Sell and Create your NFT</h1>
-                       <p>Digital marketplace for crypto collectibles and non fungable tokens</p>
-                       <div class="buttons">
-                           <button class="button button1">Explore</button>
-                           <button class="button button2">Create</button>
-                       </div>
-                   </div>
-                   <div class="sec1-right">
-                       <div class="sec1-right-nft">
-                           <img src="images/NFT.png" alt="">
-                       </div>
-                       <div class="sec1-right-nft-detail">
-                           <div class="sec1-detail-top">
-                               <img src="images/sec1-avatar.png" alt="sec1-avatar">
-                               <h3>John Abraham</h3>
-                               <img src="images/Online.svg" alt="Online">
-                           </div>
-                           <h2>Birghten LQ</h2>
-                           <div class="sec1-detail-middle">
-                               <p>Auction time</p>
-                               <p>Current Bid <span style="color: white;">:</span> <span class="primary">0.05 ETH</span></p>
-                           </div>
-                           <div class="sec1-detail-bottom">
-                               <p class="iris">3h 1m 50s</p>
-                               <p class="iris">0.15 ETH</p>
-                           </div>
-                           <div class="buttons">
-                               <button class="button button1">Explore</button>
-                               <button class="button button2">Create</button>
-                           </div>
-                       </div>
-                   </div>
-               </div>
-               <!-- Section 1 ends here -->
-                   <!-- Section 2 starts here -->
-               <div class="section2">
-                   <div class="sec2-top">
-                       <h2 class="trending">Trending Bids</h2>
-                       <div class="sec2-a">
-                           <a href="">All</a>
-                           <a href="">Artwork</a>
-                           <a href="">Book</a>
-                       </div>
-                   </div>
-                   <div class="sec2-main">
-                       <div class="card">
-                           <img src="images/NFT (1).png" alt="NFT">
-                           <h2>Liquid Wave</h2>
-                           <div class="sec1-detail-middle">
-                               <p>Auction time</p>
-                               <p>Current Bid</p>
-                           </div>
-                           <p class="primary text-right">0.05 ETH</p>
-                           <div class="sec1-detail-bottom">
-                               <p class="iris">3h 1m 50s</p>
-                               <p class="iris">0.15 ETH</p>
-                           </div>
-                           <div class="sec2-button">
-                               <button class="button button-card">Place a Bid</button>
-                           </div>
-                       </div>
-                       <div class="card">
-                           <img src="images/NFT (1).png" alt="NFT">
-                           <h2>Liquid Wave</h2>
-                           <div class="sec1-detail-middle">
-                               <p>Auction time</p>
-                               <p>Current Bid</p>
-                           </div>
-                           <p class="primary text-right">0.05 ETH</p>
-                           <div class="sec1-detail-bottom">
-                               <p class="iris">3h 1m 50s</p>
-                               <p class="iris">0.15 ETH</p>
-                           </div>
-                           <div class="sec2-button">
-                               <button class="button button-card">Place a Bid</button>
-                           </div>
-                       </div>
-                       <div class="card">
-                           <img src="images/NFT (1).png" alt="NFT">
-                           <h2>Liquid Wave</h2>
-                           <div class="sec1-detail-middle">
-                               <p>Auction time</p>
-                               <p>Current Bid</p>
-                           </div>
-                           <p class="primary text-right">0.05 ETH</p>
-                           <div class="sec1-detail-bottom">
-                               <p class="iris">3h 1m 50s</p>
-                               <p class="iris">0.15 ETH</p>
-                           </div>
-                           <div class="sec2-button">
-                               <button class="button button-card">Place a Bid</button>
-                           </div>
-                       </div>
-                       <div class="card">
-                           <img src="images/NFT (1).png" alt="NFT">
-                           <h2>Liquid Wave</h2>
-                           <div class="sec1-detail-middle">
-                               <p>Auction time</p>
-                               <p>Current Bid</p>
-                           </div>
-                           <p class="primary text-right">0.05 ETH</p>
-                           <div class="sec1-detail-bottom">
-                               <p class="iris">3h 1m 50s</p>
-                               <p class="iris">0.15 ETH</p>
-                           </div>
-                           <div class="sec2-button">
-                               <button class="button button-card">Place a Bid</button>
-                           </div>
-                       </div>
-                       <div class="card">
-                           <img src="images/NFT (1).png" alt="NFT">
-                           <h2>Liquid Wave</h2>
-                           <div class="sec1-detail-middle">
-                               <p>Auction time</p>
-                               <p>Current Bid</p>
-                           </div>
-                           <p class="primary text-right">0.05 ETH</p>
-                           <div class="sec1-detail-bottom">
-                               <p class="iris">3h 1m 50s</p>
-                               <p class="iris">0.15 ETH</p>
-                           </div>
-                           <div class="sec2-button">
-                               <button class="button button-card">Place a Bid</button>
-                           </div>
-                       </div>
-                       <div class="card">
-                           <img src="images/NFT (1).png" alt="NFT">
-                           <h2>Liquid Wave</h2>
-                           <div class="sec1-detail-middle">
-                               <p>Auction time</p>
-                               <p>Current Bid</p>
-                           </div>
-                           <p class="primary text-right">0.05 ETH</p>
-                           <div class="sec1-detail-bottom">
-                               <p class="iris">3h 1m 50s</p>
-                               <p class="iris">0.15 ETH</p>
-                           </div>
-                           <div class="sec2-button">
-                               <button class="button button-card">Place a Bid</button>
-                           </div>
-                       </div>
-                       <div class="card">
-                           <img src="images/NFT (1).png" alt="NFT">
-                           <h2>Liquid Wave</h2>
-                           <div class="sec1-detail-middle">
-                               <p>Auction time</p>
-                               <p>Current Bid</p>
-                           </div>
-                           <p class="primary text-right">0.05 ETH</p>
-                           <div class="sec1-detail-bottom">
-                               <p class="iris">3h 1m 50s</p>
-                               <p class="iris">0.15 ETH</p>
-                           </div>
-                           <div class="sec2-button">
-                               <button class="button button-card">Place a Bid</button>
-                           </div>
-                       </div>
-                       <div class="card">
-                           <img src="images/NFT (1).png" alt="NFT">
-                           <h2>Liquid Wave</h2>
-                           <div class="sec1-detail-middle">
-                               <p>Auction time</p>
-                               <p>Current Bid</p>
-                           </div>
-                           <p class="primary text-right">0.05 ETH</p>
-                           <div class="sec1-detail-bottom">
-                               <p class="iris">3h 1m 50s</p>
-                               <p class="iris">0.15 ETH</p>
-                           </div>
-                           <div class="sec2-button">
-                               <button class="button button-card">Place a Bid</button>
-                           </div>
-                       </div>
-                   </div>
-               </div>
-               <!-- Section 2 ends here -->
-               <!-- Section 3 starts here -->
-               <div class="section3">
-                   <div class="sec3-left">
-                       <h2>Trending bids</h2>
-                       <div class="sec3-left-content">
-                           <div class="sec3-left-divs">
-                               <div class="artwork1">
-                                   <img src="images/Artwork-light1.svg" alt="Artwork">
-                               </div>
-                               <div>
-                                   <h1>24K</h1>
-                                   <p>Artwork</p>
-                               </div>
-                               <p class="success">+168.001%</p>
-                           </div>
-                           <div class="sec3-left-divs">
-                               <div class="artwork2">
-                                   <img src="images/Artwork-light2.svg" alt="Artwork">
-                               </div>
-                               <div>
-                                   <h1>24K</h1>
-                                   <p>Artwork</p>
-                               </div>
-                               <p class="danger">-168.001%</p>
-                           </div>
-                           <div class="sec3-left-divs">
-                               <div class="artwork1">
-                                   <img src="images/Artwork-light1.svg" alt="Artwork">
-                               </div>
-                               <div>
-                                   <h1>24K</h1>
-                                   <p>Artwork</p>
-                               </div>
-                               <p class="success">+168.001%</p>
-                           </div>
-                       </div>
-                   </div>
-                   <div class="sec3-middle">
-                       <h2>ETH Price</h2>
-                       <div class="sec3-middle-content">
-                           <canvas id="myChart"></canvas>
-                       </div>
-                   </div>
-                   <div class="sec3-right">
-                       <h2>Statistics</h2>
-                       <div class="sec3-right-content">
-                           <canvas id="myChart1"></canvas>
-                           <div class="label-container">
-                               <div class="label">
-                                   <div class="pointer1"></div>
-                                   <p>Artwork Sold</p>
-                               </div>
-                               <div class="label">
-                                   <div class="pointer2"></div>
-                                   <p>Artwork CanCel</p>
-                               </div>
-                           </div>
-                       </div>
-                   </div>
-               </div>
-               <!-- section 3 ends here -->
-               <!-- Section 4 starts here -->
-               <div class="section4">
-                   <div class="sec4-left">
-                       <div class="sec4-left-top">
-                           <h2 class="black">Recent Activity</h2>
-                           <p class="primary">See more</p>
-                       </div>
-                       <div class="sec4-left-inner-divs">
-                           <div class="sec4-left-divs">
-                               <img src="images/sec1-avatar.png" alt="sec1-avatar">
-                               <div>
-                                   <h3>Papaya</h3>
-                                   <p>Purchase by you for 0.05 ETH</p>
-                               </div>
-                               <p>12 mins ago</p>
-                           </div>
-                           <div class="sec4-left-divs">
-                               <img src="images/sec1-avatar.png" alt="sec1-avatar">
-                               <div>
-                                   <h3>Papaya</h3>
-                                   <p>Purchase by you for 0.05 ETH</p>
-                               </div>
-                               <p>12 mins ago</p>
-                           </div>
-                           <div class="sec4-left-divs">
-                               <img src="images/sec1-avatar.png" alt="sec1-avatar">
-                               <div>
-                                   <h3>Papaya</h3>
-                                   <p>Purchase by you for 0.05 ETH</p>
-                               </div>
-                               <p>12 mins ago</p>
-                           </div>
-                           <div class="sec4-left-divs">
-                               <img src="images/sec1-avatar.png" alt="sec1-avatar">
-                               <div>
-                                   <h3>Papaya</h3>
-                                   <p>Purchase by you for 0.05 ETH</p>
-                               </div>
-                               <p>12 mins ago</p>
-                           </div>
-                           <div class="sec4-left-divs">
-                               <img src="images/sec1-avatar.png" alt="sec1-avatar">
-                               <div>
-                                   <h3>Papaya</h3>
-                                   <p>Purchase by you for 0.05 ETH</p>
-                               </div>
-                               <p>12 mins ago</p>
-                           </div>
-                       </div>
-                   </div>
-                   <div class="sec4-right">
-                       <h2>Top Creators</h2>
-                       <div class="sec4-right-inner-divs">
-                           <div class="sec4-right-divs">
-                               <div class="sec4-right-pic-text">
-                                   <img src="images/sec1-avatar.png" alt="sec1-avatar">
-                               <div>
-                                   <h3>Papaya</h3>
-                                   <p>60 Items</p>
-                               </div>
-                               </div>
-                               <button class="button follow">Follow</button>
-                           </div>
-                           <div class="sec4-right-divs">
-                               <div class="sec4-right-pic-text">
-                                   <img src="images/sec1-avatar.png" alt="sec1-avatar">
-                               <div>
-                                   <h3>Papaya</h3>
-                                   <p>60 Items</p>
-                               </div>
-                               </div>
-                               <button class="button follow">Follow</button>
-                           </div>
-                           <div class="sec4-right-divs">
-                               <div class="sec4-right-pic-text">
-                                   <img src="images/sec1-avatar.png" alt="sec1-avatar">
-                               <div>
-                                   <h3>Papaya</h3>
-                                   <p>60 Items</p>
-                               </div>
-                               </div>
-                               <button class="button follow">Follow</button>
-                           </div>
-                           <div class="sec4-right-divs">
-                               <div class="sec4-right-pic-text">
-                                   <img src="images/sec1-avatar.png" alt="sec1-avatar">
-                               <div>
-                                   <h3>Papaya</h3>
-                                   <p>60 Items</p>
-                               </div>
-                               </div>
-                               <button class="button follow">Follow</button>
-                           </div>
-                           <div class="sec4-right-divs">
-                               <div class="sec4-right-pic-text">
-                                   <img src="images/sec1-avatar.png" alt="sec1-avatar">
-                               <div>
-                                   <h3>Papaya</h3>
-                                   <p>60 Items</p>
-                               </div>
-                               </div>
-                               <button class="button follow">Follow</button>
-                           </div>
-                           <div class="sec4-right-divs">
-                               <div class="sec4-right-pic-text">
-                                   <img src="images/sec1-avatar.png" alt="sec1-avatar">
-                               <div>
-                                   <h3>Papaya</h3>
-                                   <p>60 Items</p>
-                               </div>
-                               </div>
-                               <button class="button follow">Follow</button>
-                           </div>
-                           <div class="sec4-right-divs">
-                               <div class="sec4-right-pic-text">
-                                   <img src="images/sec1-avatar.png" alt="sec1-avatar">
-                               <div>
-                                   <h3>Papaya</h3>
-                                   <p>60 Items</p>
-                               </div>
-                               </div>
-                               <button class="button follow">Follow</button>
-                           </div>
-                           <div class="sec4-right-divs">
-                               <div class="sec4-right-pic-text">
-                                   <img src="images/sec1-avatar.png" alt="sec1-avatar">
-                               <div>
-                                   <h3>Papaya</h3>
-                                   <p>60 Items</p>
-                               </div>
-                               </div>
-                               <button class="button follow">Follow</button>
-                           </div>
-                       </div>
-                   </div>
-               </div>
-               <!-- section 4 ends here -->
-               <!-- section 5 starts here -->
-               <div class="section5">
-                   <h2>Active Bids</h2>
-                   <div class="sec5-top">
-                      <div class="sec5-top-div1 sec5-display">
-                       <input type="checkbox" name="" id="" />
-                       <h3>Item List</h3>
-                      </div>
-                      <div><h3>Open Price</h3></div>
-                      <div><h3>Your Offer</h3></div>
-                      <div><h3>Recent Offer</h3></div>
-                      <div class="sec5-top-div2 sec5-display">
-                       <h3>Time left</h3>
-                       <h3 class="action">Action</h3>
-                      </div>
-                   </div>
-                    <div class="sec5-main">
-                       <div class="sec5-main-divs sec5-display">
-                        <input type="checkbox" name="" id="" />
-                        <div class="sec5-inner-divs sec5-display">
-                           <img src="images/NFT (2).png" alt="NFT">
-                           <div>
-                               <h3>Cute Cube Cool</h3>
-                               <p>John Abraham</p>
-                           </div>
-                        </div>
-                       </div>
-                       <div class="sec5-display"><p>0.0025 ETH</p></div>
-                       <div  class="sec5-display"><p>0.0025 ETH</p></div>
-                       <div class="sec5-inner-divs sec5-display">
-                           <img src="images/avatar.png" alt="avatar">
-                           <p>0.0025 ETH</p>
-                       </div>
-                       <div  class="sec5-display">
-                           <p>2 hours 1 min 30s</p>
-                       </div>
-                    </div>
-                    <div class="sec5-main">
-                       <div class="sec5-main-divs sec5-display">
-                        <input type="checkbox" name="" id="" />
-                        <div class="sec5-inner-divs sec5-display">
-                           <img src="images/NFT (3).png" alt="NFT">
-                           <div>
-                               <h3>Liquid Wave</h3>
-                               <p>John Abraham</p>
-                           </div>
-                        </div>
-                       </div>
-                       <div class="sec5-display"><p>0.0025 ETH</p></div>
-                       <div  class="sec5-display"><p>0.0025 ETH</p></div>
-                       <div class="sec5-inner-divs sec5-display">
-                           <img src="images/avatar.png" alt="avatar">
-                           <p>0.0025 ETH</p>
-                       </div>
-                       <div  class="sec5-display">
-                           <p>2 hours 1 min 30s</p>
-                       </div>
-                    </div>
-                    <div class="sec5-main">
-                       <div class="sec5-main-divs sec5-display">
-                        <input type="checkbox" name="" id="" />
-                        <div class="sec5-inner-divs sec5-display">
-                           <img src="images/NFT (2).png" alt="NFT">
-                           <div>
-                               <h3>Cute Cube Cool</h3>
-                               <p>John Abraham</p>
-                           </div>
-                        </div>
-                       </div>
-                       <div class="sec5-display"><p>0.0025 ETH</p></div>
-                       <div  class="sec5-display"><p>0.0025 ETH</p></div>
-                       <div class="sec5-inner-divs sec5-display">
-                           <img src="images/avatar.png" alt="avatar">
-                           <p>0.0025 ETH</p>
-                       </div>
-                       <div  class="sec5-display">
-                           <p>2 hours 1 min 30s</p>
-                       </div>
-                    </div>
-                    <div class="sec5-main">
-                       <div class="sec5-main-divs sec5-display">
-                        <input type="checkbox" name="" id="" />
-                        <div class="sec5-inner-divs sec5-display">
-                           <img src="images/NFT (4).png" alt="NFT">
-                           <div>
-                               <h3>Liquid Wave</h3>
-                               <p>John Abraham</p>
-                           </div>
-                        </div>
-                       </div>
-                       <div class="sec5-display"><p>0.0025 ETH</p></div>
-                       <div  class="sec5-display"><p>0.0025 ETH</p></div>
-                       <div class="sec5-inner-divs sec5-display">
-                           <img src="images/avatar.png" alt="avatar">
-                           <p>0.0025 ETH</p>
-                       </div>
-                       <div  class="sec5-display">
-                           <p>2 hours 1 min 30s</p>
-                       </div>
-                    </div>
-                    <div class="sec5-main">
-                       <div class="sec5-main-divs sec5-display">
-                        <input type="checkbox" name="" id="" />
-                        <div class="sec5-inner-divs sec5-display">
-                           <img src="images/NFT (5).png" alt="NFT">
-                           <div>
-                               <h3>Liquid Wave</h3>
-                               <p>John Abraham</p>
-                           </div>
-                        </div>
-                       </div>
-                       <div class="sec5-display"><p>0.0025 ETH</p></div>
-                       <div  class="sec5-display"><p>0.0025 ETH</p></div>
-                       <div class="sec5-inner-divs sec5-display">
-                           <img src="images/avatar.png" alt="avatar">
-                           <p>0.0025 ETH</p>
-                       </div>
-                       <div  class="sec5-display">
-                           <p>2 hours 1 min 30s</p>
-                       </div>
-                    </div>
-               </div>
-               <!-- Section 5 ends here -->
-               </div>
-               <!-- Home Section ends here -->
-               <!-- Bids Section starts here -->
-               <div class="bids content" id="bids">
-                   <!-- Section 1 Starts here -->
-                   <div class="bids-section1">
-                       <div>
-                           <h2>Bids</h2>
-                       </div>
-                       <div class="welcome-bids">
-                        <p>Welcome bids page</p>
-                        <div class="home-bids-link">
-                            <a href="" class="primary">Home</a>
-                            <p>&gt;</p>
-                            <a href="#bids" class="primary">Bids</a>
-                        </div>
-                       </div>
-                   </div>
-                   <!-- section 1 ends here -->
-                   <!-- Section 2 starts here -->
-                   <div class="bids-section2">
-                    <div class="bids-section2-divs">
-                        <div class="artwork">
-                            <img src="images/Artwork-light2.svg" alt="Artwork">
-                        </div>
-                        <div>
-                            <h1>24K</h1>
-                            <p>Artwork</p>
-                        </div>
-                    </div>
-                    <div class="bids-section2-divs">
-                        <div class="artwork artwork2">
-                            <img src="images/Artwork-light2.svg" alt="Artwork">
-                        </div>
-                        <div>
-                            <h1>82k</h1>
-                            <p>Auction</p>
-                        </div>
-                    </div>
-                    <div class="bids-section2-divs">
-                        <div class="artwork artwork3">
-                            <img src="images/Artwork-light2.svg" alt="Artwork">
-                        </div>
-                        <div>
-                            <h1>200</h1>
-                            <p>Creators</p>
-                        </div>
-                    </div>
-                    <div class="bids-section2-divs">
-                        <div class="artwork artwork4">
-                            <img src="images/Artwork-light2.svg" alt="Artwork">
-                        </div>
-                        <div>
-                            <h1>89</h1>
-                            <p>Canceled</p>
-                        </div>
-                    </div>
-                   </div>
-                   <!-- Bids Section 2 ends here -->
-                   <!-- Bids Section 3 starts here -->
-                   <div class="bids-section3">
-                        <h1>Active Bids</h1>
-                        <button class="button bid-place">Place a Bid</button>
-                   </div>
-                   <div class="section5 bids-sec3">
-                    <div class="sec5-top bids-sec3-top">
-                       <div class="sec5-top-div1 bids-sec3-display">
-                        <input type="checkbox" name="" id="" />
-                        <h3>Item List</h3>
-                       </div>
-                       <div><h3>Open Price</h3></div>
-                       <div><h3>Your Offer</h3></div>
-                       <div><h3>Recent Offer</h3></div>
-                       <div class="bid-sec3-top-div2">
-                        <h3>Time left</h3>
-                        <h3 class="black">Action</h3>
-                       </div>
-                    </div>
-                     <div class="sec5-main bids-sec3-inner-divs">
-                        <div class="sec5-main-divs bids-sec3-display">
-                         <input type="checkbox" name="" id="" />
-                         <div class="sec5-inner-divs bids-sec3-display">
-                            <img src="images/NFT (2).png" alt="NFT">
-                            <div>
-                                <h3>Cute Cube Cool</h3>
-                                <p>John Abraham</p>
-                            </div>
-                         </div>
-                        </div>
-                        <div class="bids-sec3-display"><p>0.0025 ETH</p></div>
-                        <div  class="bids-sec3-display"><p>0.0025 ETH</p></div>
-                        <div class="sec5-inner-divs bids-sec3-display">
-                            <img src="images/avatar.png" alt="avatar">
-                            <p>0.0025 ETH</p>
-                        </div>
-                        <div  class="bids-sec3-display close-hours">
-                            <p>2 hours 1 min 30s</p>
-                            <button class="close">
-                                <span class="material-symbols-sharp">close</span>
-                            </button>
-                        </div>
-                     </div>
-                     <div class="sec5-main bids-sec3-inner-divs">
-                        <div class="sec5-main-divs bids-sec3-display">
-                         <input type="checkbox" name="" id="" />
-                         <div class="sec5-inner-divs bids-sec3-display">
-                            <img src="images/NFT (3).png" alt="NFT">
-                            <div>
-                                <h3>Liquid Wave</h3>
-                                <p>John Abraham</p>
-                            </div>
-                         </div>
-                        </div>
-                        <div class="bids-sec3-display"><p>0.0025 ETH</p></div>
-                        <div  class="bids-sec3-display"><p>0.0025 ETH</p></div>
-                        <div class="sec5-inner-divs bids-sec3-display">
-                            <img src="images/avatar.png" alt="avatar">
-                            <p>0.0025 ETH</p>
-                        </div>
-                        <div  class="bids-sec3-display close-hours">
-                            <p>2 hours 1 min 30s</p>
-                            <button class="close">
-                                <span class="material-symbols-sharp">close</span>
-                            </button>
-                        </div>
-                     </div>
-                     <div class="sec5-main bids-sec3-inner-divs">
-                        <div class="sec5-main-divs bids-sec3-display">
-                         <input type="checkbox" name="" id="" />
-                         <div class="sec5-inner-divs bids-sec3-display">
-                            <img src="images/NFT (2).png" alt="NFT">
-                            <div>
-                                <h3>Cute Cube Cool</h3>
-                                <p>John Abraham</p>
-                            </div>
-                         </div>
-                        </div>
-                        <div class="bids-sec3-display"><p>0.0025 ETH</p></div>
-                        <div  class="bids-sec3-display"><p>0.0025 ETH</p></div>
-                        <div class="sec5-inner-divs bids-sec3-display">
-                            <img src="images/avatar.png" alt="avatar">
-                            <p>0.0025 ETH</p>
-                        </div>
-                        <div  class="bids-sec3-display close-hours">
-                            <p>2 hours 1 min 30s</p>
-                            <button class="close">
-                                <span class="material-symbols-sharp">close</span>
-                            </button>
-                        </div>
-                     </div>
-                     <div class="sec5-main bids-sec3-main">
-                        <div class="sec5-main-divs bids-sec3-display">
-                         <input type="checkbox" name="" id="" />
-                         <div class="sec5-inner-divs bids-sec3-display">
-                            <img src="images/NFT (4).png" alt="NFT">
-                            <div>
-                                <h3>Liquid Wave</h3>
-                                <p>John Abraham</p>
-                            </div>
-                         </div>
-                        </div>
-                        <div class="bids-sec3-display"><p>0.0025 ETH</p></div>
-                        <div  class="bids-sec3-display"><p>0.0025 ETH</p></div>
-                        <div class="sec5-inner-divs bids-sec3-display">
-                            <img src="images/avatar.png" alt="avatar">
-                            <p>0.0025 ETH</p>
-                        </div>
-                        <div  class="bids-sec3-display close-hours">
-                            <p>2 hours 1 min 30s</p>
-                            <button class="close">
-                                <span class="material-symbols-sharp">close</span>
-                            </button>
-                        </div>
-                     </div>
-                     <div class="sec5-main bids-sec3-inner-divs">
-                        <div class="sec5-main-divs bids-sec3-display">
-                         <input type="checkbox" name="" id="" />
-                         <div class="sec5-inner-divs bids-sec3-display">
-                            <img src="images/NFT (5).png" alt="NFT">
-                            <div>
-                                <h3>Liquid Wave</h3>
-                                <p>John Abraham</p>
-                            </div>
-                         </div>
-                        </div>
-                        <div class="bids-sec3-display"><p>0.0025 ETH</p></div>
-                        <div  class="bids-sec3-display"><p>0.0025 ETH</p></div>
-                        <div class="sec5-inner-divs bids-sec3-display">
-                            <img src="images/avatar.png" alt="avatar">
-                            <p>0.0025 ETH</p>
-                        </div>
-                        <div  class="bids-sec3-display close-hours">
-                            <p>2 hours 1 min 30s</p>
-                            <button class="close">
-                                <span class="material-symbols-sharp">close</span>
-                            </button>
-                        </div>
-                     </div>
+            <!-- Section 1 ends here -->
+            <!-- Section 2 starts here -->
+            <div class="section2">
+              <div class="sec2-top">
+                <h2 class="trending">Trending Bids</h2>
+                <div class="sec2-a">
+                  <a href="">All</a>
+                  <a href="">Artwork</a>
+                  <a href="">Book</a>
                 </div>
-                <!-- Bids section 3 ends here -->
-               </div>
-               <!-- Bids section ends here -->
-               <!-- Saved items Section starts here -->
-               <div class="saved content" id="saved">
-                <!-- Saved Section 1 starts here -->
-                <div class="saved-section1">
+              </div>
+              <div class="sec2-main cards-all">
+                <div class="card">
+                  <img src="images/NFT (1).png" alt="NFT" />
+                  <h2>Liquid Wave</h2>
+                  <div class="sec1-detail-middle">
+                    <p>Auction time</p>
+                    <p>Current Bid</p>
+                  </div>
+                  <p class="primary text-right">0.05 ETH</p>
+                  <div class="sec1-detail-bottom">
+                    <p class="iris">3h 1m 50s</p>
+                    <p class="iris">0.15 ETH</p>
+                  </div>
+                  <div class="sec2-button cards-all-button">
+                    <button class="button button-card">Place a Bid</button>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="images/NFT (1).png" alt="NFT" />
+                  <h2>Liquid Wave</h2>
+                  <div class="sec1-detail-middle">
+                    <p>Auction time</p>
+                    <p>Current Bid</p>
+                  </div>
+                  <p class="primary text-right">0.05 ETH</p>
+                  <div class="sec1-detail-bottom">
+                    <p class="iris">3h 1m 50s</p>
+                    <p class="iris">0.15 ETH</p>
+                  </div>
+                  <div class="sec2-button cards-all-button">
+                    <button class="button button-card">Place a Bid</button>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="images/NFT (1).png" alt="NFT" />
+                  <h2>Liquid Wave</h2>
+                  <div class="sec1-detail-middle">
+                    <p>Auction time</p>
+                    <p>Current Bid</p>
+                  </div>
+                  <p class="primary text-right">0.05 ETH</p>
+                  <div class="sec1-detail-bottom">
+                    <p class="iris">3h 1m 50s</p>
+                    <p class="iris">0.15 ETH</p>
+                  </div>
+                  <div class="sec2-button cards-all-button">
+                    <button class="button button-card">Place a Bid</button>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="images/NFT (1).png" alt="NFT" />
+                  <h2>Liquid Wave</h2>
+                  <div class="sec1-detail-middle">
+                    <p>Auction time</p>
+                    <p>Current Bid</p>
+                  </div>
+                  <p class="primary text-right">0.05 ETH</p>
+                  <div class="sec1-detail-bottom">
+                    <p class="iris">3h 1m 50s</p>
+                    <p class="iris">0.15 ETH</p>
+                  </div>
+                  <div class="sec2-button cards-all-button">
+                    <button class="button button-card">Place a Bid</button>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="images/NFT (1).png" alt="NFT" />
+                  <h2>Liquid Wave</h2>
+                  <div class="sec1-detail-middle">
+                    <p>Auction time</p>
+                    <p>Current Bid</p>
+                  </div>
+                  <p class="primary text-right">0.05 ETH</p>
+                  <div class="sec1-detail-bottom">
+                    <p class="iris">3h 1m 50s</p>
+                    <p class="iris">0.15 ETH</p>
+                  </div>
+                  <div class="sec2-button cards-all-button">
+                    <button class="button button-card">Place a Bid</button>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="images/NFT (1).png" alt="NFT" />
+                  <h2>Liquid Wave</h2>
+                  <div class="sec1-detail-middle">
+                    <p>Auction time</p>
+                    <p>Current Bid</p>
+                  </div>
+                  <p class="primary text-right">0.05 ETH</p>
+                  <div class="sec1-detail-bottom">
+                    <p class="iris">3h 1m 50s</p>
+                    <p class="iris">0.15 ETH</p>
+                  </div>
+                  <div class="sec2-button cards-all-button">
+                    <button class="button button-card">Place a Bid</button>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="images/NFT (1).png" alt="NFT" />
+                  <h2>Liquid Wave</h2>
+                  <div class="sec1-detail-middle">
+                    <p>Auction time</p>
+                    <p>Current Bid</p>
+                  </div>
+                  <p class="primary text-right">0.05 ETH</p>
+                  <div class="sec1-detail-bottom">
+                    <p class="iris">3h 1m 50s</p>
+                    <p class="iris">0.15 ETH</p>
+                  </div>
+                  <div class="sec2-button cards-all-button">
+                    <button class="button button-card">Place a Bid</button>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="images/NFT (1).png" alt="NFT" />
+                  <h2>Liquid Wave</h2>
+                  <div class="sec1-detail-middle">
+                    <p>Auction time</p>
+                    <p>Current Bid</p>
+                  </div>
+                  <p class="primary text-right">0.05 ETH</p>
+                  <div class="sec1-detail-bottom">
+                    <p class="iris">3h 1m 50s</p>
+                    <p class="iris">0.15 ETH</p>
+                  </div>
+                  <div class="sec2-button cards-all-button">
+                    <button class="button button-card">Place a Bid</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Section 2 ends here -->
+            <!-- Section 3 starts here -->
+            <div class="section3">
+              <div class="sec3-left">
+                <h2>Trending bids</h2>
+                <div class="sec3-left-content">
+                  <div class="sec3-left-divs">
+                    <div class="sec3-left-inner-divs">
+                      <div class="artwork1">
+                        <img src="images/Artwork-light1.svg" alt="Artwork" />
+                      </div>
+                      <div>
+                        <h1>24K</h1>
+                        <p>Artwork</p>
+                      </div>
+                    </div>
+                    <p class="success">+168.001%</p>
+                  </div>
+                  <div class="sec3-left-divs">
+                    <div class="sec3-left-inner-divs">
+                      <div class="artwork2">
+                        <img src="images/Artwork-light2.svg" alt="Artwork" />
+                      </div>
+                      <div>
+                        <h1>24K</h1>
+                        <p>Artwork</p>
+                      </div>
+                    </div>
+                    <p class="danger">-168.001%</p>
+                  </div>
+                  <div class="sec3-left-divs">
+                    <div class="sec3-left-inner-divs">
+                      <div class="artwork1">
+                        <img src="images/Artwork-light1.svg" alt="Artwork" />
+                      </div>
+                      <div>
+                        <h1>24K</h1>
+                        <p>Artwork</p>
+                      </div>
+                    </div>
+                    <p class="success">+168.001%</p>
+                  </div>
+                </div>
+              </div>
+              <div class="sec3-middle">
+                <h2>ETH Price</h2>
+                <div class="sec3-middle-content">
+                  <canvas id="myChart"></canvas>
+                </div>
+              </div>
+              <div class="sec3-right">
+                <h2>Statistics</h2>
+                <div class="sec3-right-content">
+                  <canvas id="myChart1"></canvas>
+                  <div class="label-container">
+                    <div class="label">
+                      <div class="pointer1"></div>
+                      <p>Artwork Sold</p>
+                    </div>
+                    <div class="label">
+                      <div class="pointer2"></div>
+                      <p>Artwork CanCel</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- section 3 ends here -->
+            <!-- Section 4 starts here -->
+            <div class="section4">
+              <div class="sec4-left">
+                <div class="sec4-left-top">
+                  <h2 class="black">Recent Activity</h2>
+                  <p class="primary">See more</p>
+                </div>
+                <div class="sec4-left-inner-divs">
+                  <div class="sec4-left-divs">
+                    <img src="images/sec1-avatar.png" alt="sec1-avatar" />
                     <div>
-                        <h2>Saved Items</h2>
+                      <h3>Papaya</h3>
+                      <p>Purchase by you for 0.05 ETH</p>
                     </div>
-                    <div class="welcome-saved">
-                     <p>Welcome Saved page</p>
-                     <div class="home-saved-link">
-                         <a href="" class="primary">Home</a>
-                         <p>&gt;</p>
-                         <a href="#saved" class="primary">Saved</a>
-                     </div>
+                    <p>12 mins ago</p>
+                  </div>
+                  <div class="sec4-left-divs">
+                    <img src="images/sec1-avatar.png" alt="sec1-avatar" />
+                    <div>
+                      <h3>Papaya</h3>
+                      <p>Purchase by you for 0.05 ETH</p>
                     </div>
+                    <p>12 mins ago</p>
+                  </div>
+                  <div class="sec4-left-divs">
+                    <img src="images/sec1-avatar.png" alt="sec1-avatar" />
+                    <div>
+                      <h3>Papaya</h3>
+                      <p>Purchase by you for 0.05 ETH</p>
+                    </div>
+                    <p>12 mins ago</p>
+                  </div>
+                  <div class="sec4-left-divs">
+                    <img src="images/sec1-avatar.png" alt="sec1-avatar" />
+                    <div>
+                      <h3>Papaya</h3>
+                      <p>Purchase by you for 0.05 ETH</p>
+                    </div>
+                    <p>12 mins ago</p>
+                  </div>
+                  <div class="sec4-left-divs">
+                    <img src="images/sec1-avatar.png" alt="sec1-avatar" />
+                    <div>
+                      <h3>Papaya</h3>
+                      <p>Purchase by you for 0.05 ETH</p>
+                    </div>
+                    <p>12 mins ago</p>
+                  </div>
                 </div>
-                <!-- Saved Section 1 starts here -->
-                <!-- Saved section 2 starts here -->
-                <div class="saved-section2">
-                    <div class="card">
-                        <img src="images/NFT (1).png" alt="NFT">
-                        <h2>Liquid Wave</h2>
-                        <div class="sec1-detail-middle">
-                            <p>Auction time</p>
-                            <p>Current Bid</p>
-                        </div>
-                        <p class="primary text-right">0.05 ETH</p>
-                        <div class="sec1-detail-bottom">
-                            <p class="iris">3h 1m 50s</p>
-                            <p class="iris">0.15 ETH</p>
-                        </div>
-                        <div class="saved-sec2-button">
-                            <button class="button button-card">Place a Bid</button>
-                        </div>
+              </div>
+              <div class="sec4-right">
+                <h2>Top Creators</h2>
+                <div class="sec4-right-inner-divs">
+                  <div class="sec4-right-divs">
+                    <div class="sec4-right-pic-text">
+                      <img src="images/sec1-avatar.png" alt="sec1-avatar" />
+                      <div>
+                        <h3>Papaya</h3>
+                        <p>60 Items</p>
+                      </div>
                     </div>
-                    <div class="card">
-                        <img src="images/NFT (1).png" alt="NFT">
-                        <h2>Liquid Wave</h2>
-                        <div class="sec1-detail-middle">
-                            <p>Auction time</p>
-                            <p>Current Bid</p>
-                        </div>
-                        <p class="primary text-right">0.05 ETH</p>
-                        <div class="sec1-detail-bottom">
-                            <p class="iris">3h 1m 50s</p>
-                            <p class="iris">0.15 ETH</p>
-                        </div>
-                        <div class="saved-sec2-button">
-                            <button class="button button-card">Place a Bid</button>
-                        </div>
+                    <button class="button follow">Follow</button>
+                  </div>
+                  <div class="sec4-right-divs">
+                    <div class="sec4-right-pic-text">
+                      <img src="images/sec1-avatar.png" alt="sec1-avatar" />
+                      <div>
+                        <h3>Papaya</h3>
+                        <p>60 Items</p>
+                      </div>
                     </div>
-                    <div class="card">
-                        <img src="images/NFT (1).png" alt="NFT">
-                        <h2>Liquid Wave</h2>
-                        <div class="sec1-detail-middle">
-                            <p>Auction time</p>
-                            <p>Current Bid</p>
-                        </div>
-                        <p class="primary text-right">0.05 ETH</p>
-                        <div class="sec1-detail-bottom">
-                            <p class="iris">3h 1m 50s</p>
-                            <p class="iris">0.15 ETH</p>
-                        </div>
-                        <div class="saved-sec2-button">
-                            <button class="button button-card">Place a Bid</button>
-                        </div>
+                    <button class="button follow">Follow</button>
+                  </div>
+                  <div class="sec4-right-divs">
+                    <div class="sec4-right-pic-text">
+                      <img src="images/sec1-avatar.png" alt="sec1-avatar" />
+                      <div>
+                        <h3>Papaya</h3>
+                        <p>60 Items</p>
+                      </div>
                     </div>
-                    <div class="card">
-                        <img src="images/NFT (1).png" alt="NFT">
-                        <h2>Liquid Wave</h2>
-                        <div class="sec1-detail-middle">
-                            <p>Auction time</p>
-                            <p>Current Bid</p>
-                        </div>
-                        <p class="primary text-right">0.05 ETH</p>
-                        <div class="sec1-detail-bottom">
-                            <p class="iris">3h 1m 50s</p>
-                            <p class="iris">0.15 ETH</p>
-                        </div>
-                        <div class="saved-sec2-button">
-                            <button class="button button-card">Place a Bid</button>
-                        </div>
+                    <button class="button follow">Follow</button>
+                  </div>
+                  <div class="sec4-right-divs">
+                    <div class="sec4-right-pic-text">
+                      <img src="images/sec1-avatar.png" alt="sec1-avatar" />
+                      <div>
+                        <h3>Papaya</h3>
+                        <p>60 Items</p>
+                      </div>
                     </div>
-                    <div class="card">
-                        <img src="images/NFT (1).png" alt="NFT">
-                        <h2>Liquid Wave</h2>
-                        <div class="sec1-detail-middle">
-                            <p>Auction time</p>
-                            <p>Current Bid</p>
-                        </div>
-                        <p class="primary text-right">0.05 ETH</p>
-                        <div class="sec1-detail-bottom">
-                            <p class="iris">3h 1m 50s</p>
-                            <p class="iris">0.15 ETH</p>
-                        </div>
-                        <div class="saved-sec2-button">
-                            <button class="button button-card">Place a Bid</button>
-                        </div>
+                    <button class="button follow">Follow</button>
+                  </div>
+                  <div class="sec4-right-divs display-none">
+                    <div class="sec4-right-pic-text">
+                      <img src="images/sec1-avatar.png" alt="sec1-avatar" />
+                      <div>
+                        <h3>Papaya</h3>
+                        <p>60 Items</p>
+                      </div>
                     </div>
-                    <div class="card">
-                        <img src="images/NFT (1).png" alt="NFT">
-                        <h2>Liquid Wave</h2>
-                        <div class="sec1-detail-middle">
-                            <p>Auction time</p>
-                            <p>Current Bid</p>
-                        </div>
-                        <p class="primary text-right">0.05 ETH</p>
-                        <div class="sec1-detail-bottom">
-                            <p class="iris">3h 1m 50s</p>
-                            <p class="iris">0.15 ETH</p>
-                        </div>
-                        <div class="saved-sec2-button">
-                            <button class="button button-card">Place a Bid</button>
-                        </div>
+                    <button class="button follow">Follow</button>
+                  </div>
+                  <div class="sec4-right-divs display-none">
+                    <div class="sec4-right-pic-text">
+                      <img src="images/sec1-avatar.png" alt="sec1-avatar" />
+                      <div>
+                        <h3>Papaya</h3>
+                        <p>60 Items</p>
+                      </div>
                     </div>
-                    <div class="card">
-                        <img src="images/NFT (1).png" alt="NFT">
-                        <h2>Liquid Wave</h2>
-                        <div class="sec1-detail-middle">
-                            <p>Auction time</p>
-                            <p>Current Bid</p>
-                        </div>
-                        <p class="primary text-right">0.05 ETH</p>
-                        <div class="sec1-detail-bottom">
-                            <p class="iris">3h 1m 50s</p>
-                            <p class="iris">0.15 ETH</p>
-                        </div>
-                        <div class="saved-sec2-button">
-                            <button class="button button-card">Place a Bid</button>
-                        </div>
+                    <button class="button follow">Follow</button>
+                  </div>
+                  <div class="sec4-right-divs display-none">
+                    <div class="sec4-right-pic-text">
+                      <img src="images/sec1-avatar.png" alt="sec1-avatar" />
+                      <div>
+                        <h3>Papaya</h3>
+                        <p>60 Items</p>
+                      </div>
                     </div>
-                    <div class="card">
-                        <img src="images/NFT (1).png" alt="NFT">
-                        <h2>Liquid Wave</h2>
-                        <div class="sec1-detail-middle">
-                            <p>Auction time</p>
-                            <p>Current Bid</p>
-                        </div>
-                        <p class="primary text-right">0.05 ETH</p>
-                        <div class="sec1-detail-bottom">
-                            <p class="iris">3h 1m 50s</p>
-                            <p class="iris">0.15 ETH</p>
-                        </div>
-                        <div class="saved-sec2-button">
-                            <button class="button button-card">Place a Bid</button>
-                        </div>
+                    <button class="button follow">Follow</button>
+                  </div>
+                  <div class="sec4-right-divs display-none">
+                    <div class="sec4-right-pic-text">
+                      <img src="images/sec1-avatar.png" alt="sec1-avatar" />
+                      <div>
+                        <h3>Papaya</h3>
+                        <p>60 Items</p>
+                      </div>
                     </div>
+                    <button class="button follow">Follow</button>
+                  </div>
                 </div>
-                <!-- Saved Section ends here -->
-               </div>
-               <!-- Saved Section ends here -->
-               <div class="content"></div>
-               <div class="content"></div>
-               <div class="content"></div>
+              </div>
             </div>
+            <!-- section 4 ends here -->
+            <!-- section 5 starts here -->
+            <div class="section5">
+              <h2>Active Bids</h2>
+              <div class="sec5-container">
+                <div class="sec5-top">
+                  <div class="sec5-top-div1 sec5-display">
+                    <input type="checkbox" name="" id="" />
+                    <h3>Item List</h3>
+                  </div>
+                  <div><h3>Open Price</h3></div>
+                  <div><h3>Your Offer</h3></div>
+                  <div><h3>Recent Offer</h3></div>
+                  <div class="sec5-top-div2 sec5-display">
+                    <h3>Time left</h3>
+                    <h3 class="action">Action</h3>
+                  </div>
+                </div>
+                <div class="sec5-main">
+                  <div class="sec5-main-divs sec5-display">
+                    <input type="checkbox" name="" id="" />
+                    <div class="sec5-inner-divs sec5-display">
+                      <img src="images/NFT (2).png" alt="NFT" />
+                      <div>
+                        <h3>Cute Cube Cool</h3>
+                        <p>John Abraham</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="sec5-display"><p>0.0025 ETH</p></div>
+                  <div class="sec5-display"><p>0.0025 ETH</p></div>
+                  <div class="sec5-inner-divs sec5-display">
+                    <img src="images/avatar.png" alt="avatar" />
+                    <p>0.0025 ETH</p>
+                  </div>
+                  <div class="sec5-display close-hours">
+                    <p>2 hours 1 min 30s</p>
+                    <button class="closee">
+                      <span class="material-symbols-sharp">close</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="sec5-main">
+                  <div class="sec5-main-divs sec5-display">
+                    <input type="checkbox" name="" id="" />
+                    <div class="sec5-inner-divs sec5-display">
+                      <img src="images/NFT (3).png" alt="NFT" />
+                      <div>
+                        <h3>Liquid Wave</h3>
+                        <p>John Abraham</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="sec5-display"><p>0.0025 ETH</p></div>
+                  <div class="sec5-display"><p>0.0025 ETH</p></div>
+                  <div class="sec5-inner-divs sec5-display">
+                    <img src="images/avatar.png" alt="avatar" />
+                    <p>0.0025 ETH</p>
+                  </div>
+                  <div class="sec5-display close-hours">
+                    <p>2 hours 1 min 30s</p>
+                    <button class="closee">
+                      <span class="material-symbols-sharp">close</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="sec5-main">
+                  <div class="sec5-main-divs sec5-display">
+                    <input type="checkbox" name="" id="" />
+                    <div class="sec5-inner-divs sec5-display">
+                      <img src="images/NFT (2).png" alt="NFT" />
+                      <div>
+                        <h3>Cute Cube Cool</h3>
+                        <p>John Abraham</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="sec5-display"><p>0.0025 ETH</p></div>
+                  <div class="sec5-display"><p>0.0025 ETH</p></div>
+                  <div class="sec5-inner-divs sec5-display">
+                    <img src="images/avatar.png" alt="avatar" />
+                    <p>0.0025 ETH</p>
+                  </div>
+                  <div class="sec5-display close-hours">
+                    <p>2 hours 1 min 30s</p>
+                    <button class="closee">
+                      <span class="material-symbols-sharp">close</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="sec5-main">
+                  <div class="sec5-main-divs sec5-display">
+                    <input type="checkbox" name="" id="" />
+                    <div class="sec5-inner-divs sec5-display">
+                      <img src="images/NFT (4).png" alt="NFT" />
+                      <div>
+                        <h3>Liquid Wave</h3>
+                        <p>John Abraham</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="sec5-display"><p>0.0025 ETH</p></div>
+                  <div class="sec5-display"><p>0.0025 ETH</p></div>
+                  <div class="sec5-inner-divs sec5-display">
+                    <img src="images/avatar.png" alt="avatar" />
+                    <p>0.0025 ETH</p>
+                  </div>
+                  <div class="sec5-display close-hours">
+                    <p>2 hours 1 min 30s</p>
+                    <button class="closee">
+                      <span class="material-symbols-sharp">close</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="sec5-main">
+                  <div class="sec5-main-divs sec5-display">
+                    <input type="checkbox" name="" id="" />
+                    <div class="sec5-inner-divs sec5-display">
+                      <img src="images/NFT (5).png" alt="NFT" />
+                      <div>
+                        <h3>Liquid Wave</h3>
+                        <p>John Abraham</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="sec5-display"><p>0.0025 ETH</p></div>
+                  <div class="sec5-display"><p>0.0025 ETH</p></div>
+                  <div class="sec5-inner-divs sec5-display">
+                    <img src="images/avatar.png" alt="avatar" />
+                    <p>0.0025 ETH</p>
+                  </div>
+                  <div class="sec5-display close-hours">
+                    <p>2 hours 1 min 30s</p>
+                    <button class="closee">
+                      <span class="material-symbols-sharp">close</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Section 5 ends here -->
+          </div>
+          <!-- Home Page ends here -->
+          <!-- Bids Page starts here -->
+          <div class="bids content" id="bids">
+            <!-- Section 1 Starts here -->
+            <div class="bids-section1 top-for-all">
+              <div>
+                <h2>Bids</h2>
+              </div>
+              <div class="welcome-bids welcome-all">
+                <p>Welcome bids page</p>
+                <div class="home-bids-link home-all-link">
+                  <a href="" class="primary">Home</a>
+                  <p>&gt;</p>
+                  <a href="#bids" class="primary">Bids</a>
+                </div>
+              </div>
+            </div>
+            <!-- section 1 ends here -->
+            <!-- Section 2 starts here -->
+            <div class="bids-section2">
+              <div class="bids-section2-divs">
+                <div class="artwork">
+                  <img src="images/Artwork-light2.svg" alt="Artwork" />
+                </div>
+                <div>
+                  <h1>24K</h1>
+                  <p>Artwork</p>
+                </div>
+              </div>
+              <div class="bids-section2-divs">
+                <div class="artwork artwork2">
+                  <img src="images/Artwork-light2.svg" alt="Artwork" />
+                </div>
+                <div>
+                  <h1>82k</h1>
+                  <p>Auction</p>
+                </div>
+              </div>
+              <div class="bids-section2-divs">
+                <div class="artwork artwork3">
+                  <img src="images/Artwork-light2.svg" alt="Artwork" />
+                </div>
+                <div>
+                  <h1>200</h1>
+                  <p>Creators</p>
+                </div>
+              </div>
+              <div class="bids-section2-divs">
+                <div class="artwork artwork4">
+                  <img src="images/Artwork-light2.svg" alt="Artwork" />
+                </div>
+                <div>
+                  <h1>89</h1>
+                  <p>Canceled</p>
+                </div>
+              </div>
+            </div>
+            <!-- Bids Section 2 ends here -->
+            <!-- Bids Section 3 starts here -->
+            <div class="bids-section3">
+              <h1>Active Bids</h1>
+              <button class="button bid-place">Place a Bid</button>
+            </div>
+            <div class="section5 bids-sec3">
+              <div class="sec5-container bids-sec3-container">
+                <div class="sec5-top bids-sec3-top">
+                  <div class="sec5-top-div1 bids-sec3-display">
+                    <input type="checkbox" name="" id="" />
+                    <h3>Item List</h3>
+                  </div>
+                  <div><h3>Open Price</h3></div>
+                  <div><h3>Your Offer</h3></div>
+                  <div><h3>Recent Offer</h3></div>
+                  <div class="bid-sec3-top-div2">
+                    <h3>Time left</h3>
+                    <h3 class="black">Action</h3>
+                  </div>
+                </div>
+                <div class="sec5-main bids-sec3-inner-divs">
+                  <div class="sec5-main-divs bids-sec3-display">
+                    <input type="checkbox" name="" id="" />
+                    <div class="sec5-inner-divs bids-sec3-display">
+                      <img src="images/NFT (2).png" alt="NFT" />
+                      <div>
+                        <h3>Cute Cube Cool</h3>
+                        <p>John Abraham</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bids-sec3-display"><p>0.0025 ETH</p></div>
+                  <div class="bids-sec3-display"><p>0.0025 ETH</p></div>
+                  <div class="sec5-inner-divs bids-sec3-display">
+                    <img src="images/avatar.png" alt="avatar" />
+                    <p>0.0025 ETH</p>
+                  </div>
+                  <div class="bids-sec3-display close-hours">
+                    <p>2 hours 1 min 30s</p>
+                    <button class="close">
+                      <span class="material-symbols-sharp">close</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="sec5-main bids-sec3-inner-divs">
+                  <div class="sec5-main-divs bids-sec3-display">
+                    <input type="checkbox" name="" id="" />
+                    <div class="sec5-inner-divs bids-sec3-display">
+                      <img src="images/NFT (3).png" alt="NFT" />
+                      <div>
+                        <h3>Liquid Wave</h3>
+                        <p>John Abraham</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bids-sec3-display"><p>0.0025 ETH</p></div>
+                  <div class="bids-sec3-display"><p>0.0025 ETH</p></div>
+                  <div class="sec5-inner-divs bids-sec3-display">
+                    <img src="images/avatar.png" alt="avatar" />
+                    <p>0.0025 ETH</p>
+                  </div>
+                  <div class="bids-sec3-display close-hours">
+                    <p>2 hours 1 min 30s</p>
+                    <button class="close">
+                      <span class="material-symbols-sharp">close</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="sec5-main bids-sec3-inner-divs">
+                  <div class="sec5-main-divs bids-sec3-display">
+                    <input type="checkbox" name="" id="" />
+                    <div class="sec5-inner-divs bids-sec3-display">
+                      <img src="images/NFT (2).png" alt="NFT" />
+                      <div>
+                        <h3>Cute Cube Cool</h3>
+                        <p>John Abraham</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bids-sec3-display"><p>0.0025 ETH</p></div>
+                  <div class="bids-sec3-display"><p>0.0025 ETH</p></div>
+                  <div class="sec5-inner-divs bids-sec3-display">
+                    <img src="images/avatar.png" alt="avatar" />
+                    <p>0.0025 ETH</p>
+                  </div>
+                  <div class="bids-sec3-display close-hours">
+                    <p>2 hours 1 min 30s</p>
+                    <button class="close">
+                      <span class="material-symbols-sharp">close</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="sec5-main bids-sec3-main">
+                  <div class="sec5-main-divs bids-sec3-display">
+                    <input type="checkbox" name="" id="" />
+                    <div class="sec5-inner-divs bids-sec3-display">
+                      <img src="images/NFT (4).png" alt="NFT" />
+                      <div>
+                        <h3>Liquid Wave</h3>
+                        <p>John Abraham</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bids-sec3-display"><p>0.0025 ETH</p></div>
+                  <div class="bids-sec3-display"><p>0.0025 ETH</p></div>
+                  <div class="sec5-inner-divs bids-sec3-display">
+                    <img src="images/avatar.png" alt="avatar" />
+                    <p>0.0025 ETH</p>
+                  </div>
+                  <div class="bids-sec3-display close-hours">
+                    <p>2 hours 1 min 30s</p>
+                    <button class="close">
+                      <span class="material-symbols-sharp">close</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="sec5-main bids-sec3-inner-divs">
+                  <div class="sec5-main-divs bids-sec3-display">
+                    <input type="checkbox" name="" id="" />
+                    <div class="sec5-inner-divs bids-sec3-display">
+                      <img src="images/NFT (5).png" alt="NFT" />
+                      <div>
+                        <h3>Liquid Wave</h3>
+                        <p>John Abraham</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bids-sec3-display"><p>0.0025 ETH</p></div>
+                  <div class="bids-sec3-display"><p>0.0025 ETH</p></div>
+                  <div class="sec5-inner-divs bids-sec3-display">
+                    <img src="images/avatar.png" alt="avatar" />
+                    <p>0.0025 ETH</p>
+                  </div>
+                  <div class="bids-sec3-display close-hours">
+                    <p>2 hours 1 min 30s</p>
+                    <button class="close">
+                      <span class="material-symbols-sharp">close</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Bids section 3 ends here -->
+          </div>
+          <!-- Bids Page ends here -->
+          <!-- Saved items Page starts here -->
+          <div class="saved content" id="saved">
+            <!-- Saved Section 1 starts here -->
+            <div class="saved-section1 top-for-all">
+              <div>
+                <h2>Saved Items</h2>
+              </div>
+              <div class="welcome-saved welcome-all">
+                <p>Welcome Saved page</p>
+                <div class="home-saved-link home-all-link">
+                  <a href="" class="primary">Home</a>
+                  <p>&gt;</p>
+                  <a href="#saved" class="primary">Saved</a>
+                </div>
+              </div>
+            </div>
+            <!-- Saved Section 1 starts here -->
+            <!-- Saved section 2 starts here -->
+            <div class="saved-section2 cards-all">
+              <div class="card">
+                <img src="images/NFT (1).png" alt="NFT" />
+                <h2>Liquid Wave</h2>
+                <div class="sec1-detail-middle">
+                  <p>Auction time</p>
+                  <p>Current Bid</p>
+                </div>
+                <p class="primary text-right">0.05 ETH</p>
+                <div class="sec1-detail-bottom">
+                  <p class="iris">3h 1m 50s</p>
+                  <p class="iris">0.15 ETH</p>
+                </div>
+                <div class="saved-sec2-button cards-all-button">
+                  <button class="button button-card">Place a Bid</button>
+                </div>
+              </div>
+              <div class="card">
+                <img src="images/NFT (1).png" alt="NFT" />
+                <h2>Liquid Wave</h2>
+                <div class="sec1-detail-middle">
+                  <p>Auction time</p>
+                  <p>Current Bid</p>
+                </div>
+                <p class="primary text-right">0.05 ETH</p>
+                <div class="sec1-detail-bottom">
+                  <p class="iris">3h 1m 50s</p>
+                  <p class="iris">0.15 ETH</p>
+                </div>
+                <div class="saved-sec2-button cards-all-button">
+                  <button class="button button-card">Place a Bid</button>
+                </div>
+              </div>
+              <div class="card">
+                <img src="images/NFT (1).png" alt="NFT" />
+                <h2>Liquid Wave</h2>
+                <div class="sec1-detail-middle">
+                  <p>Auction time</p>
+                  <p>Current Bid</p>
+                </div>
+                <p class="primary text-right">0.05 ETH</p>
+                <div class="sec1-detail-bottom">
+                  <p class="iris">3h 1m 50s</p>
+                  <p class="iris">0.15 ETH</p>
+                </div>
+                <div class="saved-sec2-button cards-all-button">
+                  <button class="button button-card">Place a Bid</button>
+                </div>
+              </div>
+              <div class="card">
+                <img src="images/NFT (1).png" alt="NFT" />
+                <h2>Liquid Wave</h2>
+                <div class="sec1-detail-middle">
+                  <p>Auction time</p>
+                  <p>Current Bid</p>
+                </div>
+                <p class="primary text-right">0.05 ETH</p>
+                <div class="sec1-detail-bottom">
+                  <p class="iris">3h 1m 50s</p>
+                  <p class="iris">0.15 ETH</p>
+                </div>
+                <div class="saved-sec2-button cards-all-button">
+                  <button class="button button-card">Place a Bid</button>
+                </div>
+              </div>
+              <div class="card">
+                <img src="images/NFT (1).png" alt="NFT" />
+                <h2>Liquid Wave</h2>
+                <div class="sec1-detail-middle">
+                  <p>Auction time</p>
+                  <p>Current Bid</p>
+                </div>
+                <p class="primary text-right">0.05 ETH</p>
+                <div class="sec1-detail-bottom">
+                  <p class="iris">3h 1m 50s</p>
+                  <p class="iris">0.15 ETH</p>
+                </div>
+                <div class="saved-sec2-button cards-all-button">
+                  <button class="button button-card">Place a Bid</button>
+                </div>
+              </div>
+              <div class="card">
+                <img src="images/NFT (1).png" alt="NFT" />
+                <h2>Liquid Wave</h2>
+                <div class="sec1-detail-middle">
+                  <p>Auction time</p>
+                  <p>Current Bid</p>
+                </div>
+                <p class="primary text-right">0.05 ETH</p>
+                <div class="sec1-detail-bottom">
+                  <p class="iris">3h 1m 50s</p>
+                  <p class="iris">0.15 ETH</p>
+                </div>
+                <div class="saved-sec2-button cards-all-button">
+                  <button class="button button-card">Place a Bid</button>
+                </div>
+              </div>
+              <div class="card">
+                <img src="images/NFT (1).png" alt="NFT" />
+                <h2>Liquid Wave</h2>
+                <div class="sec1-detail-middle">
+                  <p>Auction time</p>
+                  <p>Current Bid</p>
+                </div>
+                <p class="primary text-right">0.05 ETH</p>
+                <div class="sec1-detail-bottom">
+                  <p class="iris">3h 1m 50s</p>
+                  <p class="iris">0.15 ETH</p>
+                </div>
+                <div class="saved-sec2-button cards-all-button">
+                  <button class="button button-card">Place a Bid</button>
+                </div>
+              </div>
+              <div class="card">
+                <img src="images/NFT (1).png" alt="NFT" />
+                <h2>Liquid Wave</h2>
+                <div class="sec1-detail-middle">
+                  <p>Auction time</p>
+                  <p>Current Bid</p>
+                </div>
+                <p class="primary text-right">0.05 ETH</p>
+                <div class="sec1-detail-bottom">
+                  <p class="iris">3h 1m 50s</p>
+                  <p class="iris">0.15 ETH</p>
+                </div>
+                <div class="saved-sec2-button cards-all-button">
+                  <button class="button button-card">Place a Bid</button>
+                </div>
+              </div>
+            </div>
+            <!-- Saved Section ends here -->
+          </div>
+          <!-- Saved Page ends here -->
+          <!-- Collections Page starts here -->
+          <div class="collection content" id="collection">
+            <!-- Collections Section 1 Starts here -->
+            <div class="collection-section1 top-for-all">
+              <div>
+                <h2>Collections</h2>
+              </div>
+              <div class="welcome-collection welcome-all">
+                <p>Welcome Collections Page</p>
+                <div class="home-collection-link home-all-link">
+                  <a href="" class="primary">Home</a>
+                  <p>&gt;</p>
+                  <a href="#collection" class="primary">Collection</a>
+                </div>
+              </div>
+            </div>
+            <!-- Collection section 1 ends here -->
+            <!-- Collection Section 2 starts here -->
+            <div class="collection-section2">
+              <div class="sec2-a">
+                <a href="">All</a>
+                <a href="">Artwork</a>
+                <a href="">Book</a>
+              </div>
+            </div>
+            <!-- Collection Section 2 ends here -->
+            <!-- Collection Section 3 starts here -->
+            <div class="collection-section3 cards-all">
+              <div class="card">
+                <img src="images/NFT (1).png" alt="NFT" />
+                <h2>Liquid Wave</h2>
+                <div class="sec1-detail-middle">
+                  <p>Auction time</p>
+                  <p>Current Bid</p>
+                </div>
+                <p class="primary text-right">0.05 ETH</p>
+                <div class="sec1-detail-bottom">
+                  <p class="iris">3h 1m 50s</p>
+                  <p class="iris">0.15 ETH</p>
+                </div>
+                <div class="collection-sec2-button cards-all-button">
+                  <button class="button button-card">Place a Bid</button>
+                </div>
+              </div>
+              <div class="card">
+                <img src="images/NFT (1).png" alt="NFT" />
+                <h2>Liquid Wave</h2>
+                <div class="sec1-detail-middle">
+                  <p>Auction time</p>
+                  <p>Current Bid</p>
+                </div>
+                <p class="primary text-right">0.05 ETH</p>
+                <div class="sec1-detail-bottom">
+                  <p class="iris">3h 1m 50s</p>
+                  <p class="iris">0.15 ETH</p>
+                </div>
+                <div class="collection-sec2-button cards-all-button">
+                  <button class="button button-card">Place a Bid</button>
+                </div>
+              </div>
+              <div class="card">
+                <img src="images/NFT (1).png" alt="NFT" />
+                <h2>Liquid Wave</h2>
+                <div class="sec1-detail-middle">
+                  <p>Auction time</p>
+                  <p>Current Bid</p>
+                </div>
+                <p class="primary text-right">0.05 ETH</p>
+                <div class="sec1-detail-bottom">
+                  <p class="iris">3h 1m 50s</p>
+                  <p class="iris">0.15 ETH</p>
+                </div>
+                <div class="collection-sec2-button cards-all-button">
+                  <button class="button button-card">Place a Bid</button>
+                </div>
+              </div>
+              <div class="card">
+                <img src="images/NFT (1).png" alt="NFT" />
+                <h2>Liquid Wave</h2>
+                <div class="sec1-detail-middle">
+                  <p>Auction time</p>
+                  <p>Current Bid</p>
+                </div>
+                <p class="primary text-right">0.05 ETH</p>
+                <div class="sec1-detail-bottom">
+                  <p class="iris">3h 1m 50s</p>
+                  <p class="iris">0.15 ETH</p>
+                </div>
+                <div class="collection-sec2-button cards-all-button">
+                  <button class="button button-card">Place a Bid</button>
+                </div>
+              </div>
+              <div class="card">
+                <img src="images/NFT (1).png" alt="NFT" />
+                <h2>Liquid Wave</h2>
+                <div class="sec1-detail-middle">
+                  <p>Auction time</p>
+                  <p>Current Bid</p>
+                </div>
+                <p class="primary text-right">0.05 ETH</p>
+                <div class="sec1-detail-bottom">
+                  <p class="iris">3h 1m 50s</p>
+                  <p class="iris">0.15 ETH</p>
+                </div>
+                <div class="collection-sec2-button cards-all-button">
+                  <button class="button button-card">Place a Bid</button>
+                </div>
+              </div>
+              <div class="card">
+                <img src="images/NFT (1).png" alt="NFT" />
+                <h2>Liquid Wave</h2>
+                <div class="sec1-detail-middle">
+                  <p>Auction time</p>
+                  <p>Current Bid</p>
+                </div>
+                <p class="primary text-right">0.05 ETH</p>
+                <div class="sec1-detail-bottom">
+                  <p class="iris">3h 1m 50s</p>
+                  <p class="iris">0.15 ETH</p>
+                </div>
+                <div class="collection-sec2-button cards-all-button">
+                  <button class="button button-card">Place a Bid</button>
+                </div>
+              </div>
+              <div class="card">
+                <img src="images/NFT (1).png" alt="NFT" />
+                <h2>Liquid Wave</h2>
+                <div class="sec1-detail-middle">
+                  <p>Auction time</p>
+                  <p>Current Bid</p>
+                </div>
+                <p class="primary text-right">0.05 ETH</p>
+                <div class="sec1-detail-bottom">
+                  <p class="iris">3h 1m 50s</p>
+                  <p class="iris">0.15 ETH</p>
+                </div>
+                <div class="collection-sec2-button cards-all-button">
+                  <button class="button button-card">Place a Bid</button>
+                </div>
+              </div>
+              <div class="card">
+                <img src="images/NFT (1).png" alt="NFT" />
+                <h2>Liquid Wave</h2>
+                <div class="sec1-detail-middle">
+                  <p>Auction time</p>
+                  <p>Current Bid</p>
+                </div>
+                <p class="primary text-right">0.05 ETH</p>
+                <div class="sec1-detail-bottom">
+                  <p class="iris">3h 1m 50s</p>
+                  <p class="iris">0.15 ETH</p>
+                </div>
+                <div class="collection-sec2-button cards-all-button">
+                  <button class="button button-card">Place a Bid</button>
+                </div>
+              </div>
+            </div>
+            <!-- Collection Section 3 ends here -->
+          </div>
+          <!-- Collection page ends here -->
+          <!-- Profile Page Starts here -->
+          <div class="profile content" id="profile">
+            <!-- Profile Section 1 Starts here -->
+            <div class="profile-section1 top-for-all">
+              <div>
+                <h2>Profile</h2>
+              </div>
+              <div class="welcome-profile welcome-all">
+                <p>Welcome Profile Page</p>
+                <div class="home-profile-link home-all-link">
+                  <a href="" class="primary">Home</a>
+                  <p>&gt;</p>
+                  <a href="#profile" class="primary">Profile</a>
+                </div>
+              </div>
+            </div>
+            <!-- profile Section 1 ends here -->
+            <!-- Profile Section 2 Starts here -->
+            <div class="profile-section2">
+              <div class="profile-sec2-left">
+                <div>
+                  <img src="images/sec1-avatar.png" alt="sec1-avatar" />
+                </div>
+                <h2>Welcome, John Smith</h2>
+                <p>
+                  Looks like you are not verified yet. Verify yourself to use
+                  the full potential of Xtrader.
+                </p>
+                <div class="profile-sec2-inner-divs profile-border-bottom">
+                  <span class="material-symbols-sharp bg-success">done</span>
+                  <a href=""><p class="primary">Verify Account</p></a>
+                </div>
+                <div class="profile-sec2-inner-divs">
+                  <span class="material-symbols-sharp bg-primary">lock</span>
+                  <a href=""
+                    ><p class="primary">Two-factor Authentication ( 2FA )</p></a
+                  >
+                </div>
+              </div>
+              <div class="profile-sec2-right">
+                <h2>Following</h2>
+                <div class="profile-following">
+                  <div class="sec4-right-divs">
+                    <div class="sec4-right-pic-text">
+                      <img src="images/sec1-avatar.png" alt="sec1-avatar" />
+                      <div>
+                        <h3>Papaya</h3>
+                        <p>60 Items</p>
+                      </div>
+                    </div>
+                    <button class="button unfollow">Unfollow</button>
+                  </div>
+                  <div class="sec4-right-divs">
+                    <div class="sec4-right-pic-text">
+                      <img src="images/sec1-avatar.png" alt="sec1-avatar" />
+                      <div>
+                        <h3>Papaya</h3>
+                        <p>60 Items</p>
+                      </div>
+                    </div>
+                    <button class="button unfollow">Unfollow</button>
+                  </div>
+                  <div class="sec4-right-divs">
+                    <div class="sec4-right-pic-text">
+                      <img src="images/sec1-avatar.png" alt="sec1-avatar" />
+                      <div>
+                        <h3>Papaya</h3>
+                        <p>60 Items</p>
+                      </div>
+                    </div>
+                    <button class="button unfollow">Unfollow</button>
+                  </div>
+                  <div class="sec4-right-divs">
+                    <div class="sec4-right-pic-text">
+                      <img src="images/sec1-avatar.png" alt="sec1-avatar" />
+                      <div>
+                        <h3>Papaya</h3>
+                        <p>60 Items</p>
+                      </div>
+                    </div>
+                    <button class="button unfollow">Unfollow</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Profile Section 2 ends here -->
+            <!-- Profile Section 3 starts here -->
+            <div class="profile-section3">
+              <h2>My Bought</h2>
+              <div class="profile-bought cards-all">
+                <div class="card">
+                  <div>
+                    <img src="images/NFT (1).png" alt="NFT" />
+                  </div>
+                  <div class="profile-bought-bottom">
+                    <h2>Liquid Wave</h2>
+                    <img src="images/sec1-avatar.png" alt="" />
+                  </div>
+                </div>
+                <div class="card">
+                  <div>
+                    <img src="images/NFT (1).png" alt="NFT" />
+                  </div>
+                  <div class="profile-bought-bottom">
+                    <h2>Liquid Wave</h2>
+                    <img src="images/sec1-avatar.png" alt="" />
+                  </div>
+                </div>
+                <div class="card">
+                  <div>
+                    <img src="images/NFT (1).png" alt="NFT" />
+                  </div>
+                  <div class="profile-bought-bottom">
+                    <h2>Liquid Wave</h2>
+                    <img src="images/sec1-avatar.png" alt="" />
+                  </div>
+                </div>
+                <div class="card">
+                  <div>
+                    <img src="images/NFT (1).png" alt="NFT" />
+                  </div>
+                  <div class="profile-bought-bottom">
+                    <h2>Liquid Wave</h2>
+                    <img src="images/sec1-avatar.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Profile Section 3 ends here -->
+            <!-- Profile Section 4 starts here  -->
+            <div class="profile-section4">
+              <h2>My Collections</h2>
+              <div class="profile-bought cards-all">
+                <div class="card">
+                  <div>
+                    <img src="images/NFT (1).png" alt="NFT" />
+                  </div>
+                  <div class="profile-bought-bottom">
+                    <h2>Liquid Wave</h2>
+                    <img src="images/sec1-avatar.png" alt="" />
+                  </div>
+                </div>
+                <div class="card">
+                  <div>
+                    <img src="images/NFT (1).png" alt="NFT" />
+                  </div>
+                  <div class="profile-bought-bottom">
+                    <h2>Liquid Wave</h2>
+                    <img src="images/sec1-avatar.png" alt="" />
+                  </div>
+                </div>
+                <div class="card">
+                  <div>
+                    <img src="images/NFT (1).png" alt="NFT" />
+                  </div>
+                  <div class="profile-bought-bottom">
+                    <h2>Liquid Wave</h2>
+                    <img src="images/sec1-avatar.png" alt="" />
+                  </div>
+                </div>
+                <div class="card">
+                  <div>
+                    <img src="images/NFT (1).png" alt="NFT" />
+                  </div>
+                  <div class="profile-bought-bottom">
+                    <h2>Liquid Wave</h2>
+                    <img src="images/sec1-avatar.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Setting Page starts here -->
+          <div class="setting content">
+            <!-- Setting section 1 starts here -->
+            <div class="setting-section1 top-for-all">
+              <div>
+                <h2>Setting</h2>
+              </div>
+              <div class="welcome-setting welcome-all">
+                <p>Welcome Setting Page</p>
+                <div class="home-setting-link home-all-link">
+                  <a href="" class="primary">Home</a>
+                  <p>&gt;</p>
+                  <a href="#setting" class="primary">Setting</a>
+                </div>
+              </div>
+            </div>
+            <!-- Setting Section 1 end here -->
+            <!-- Setting Section 2 starts here -->
+            <div class="setting-section2">
+              <div class="setting-links">
+                <a href="" class="primary">Profile</a>
+                <a href="">Application</a>
+                <a href="">Security</a>
+                <a href="">Activity</a>
+                <a href="">Payment Method</a>
+                <a href="">API</a>
+              </div>
+            </div>
+            <!-- Setting Section 2 ends here -->
+            <!-- Section section 3 starts here -->
+            <div class="setting-section3">
+              <div class="setting-sec3-divs">
+                <h2>User Profile</h2>
+                <div class="setting-sec3-inner-divs">
+                  <div class="full-name-input setting-label-input">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" name="fullname" id="fullname" />
+                  </div>
+                  <div class="setting-profile">
+                    <div>
+                      <span class="material-symbols-sharp"> person </span>
+                    </div>
+                    <div>
+                      <h3>John Smith</h3>
+                      <p>Welcome Setting Page</p>
+                    </div>
+                  </div>
+                  <button class="button save">Save</button>
+                </div>
+              </div>
+              <div class="setting-sec3-divs">
+                <h2>User Profile</h2>
+                <div class="setting-sec3-inner-divs">
+                  <div class="email-input setting-label-input">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" />
+                  </div>
+                  <div class="password-input setting-label-input">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" />
+                  </div>
+                  <button class="button save">Save</button>
+                </div>
+              </div>
+            </div>
+            <!-- Setting Section 3 ends here -->
+            <!-- Setting Section 4 starts here -->
+            <div class="setting-section4">
+              <h2>Personal Information</h2>
+              <div class="setting-sec4-divs">
+                <div class="info-input setting-label-input">
+                  <label for="info">Info</label>
+                  <input type="text" name="info" id="info" />
+                </div>
+                <div class="info-input setting-label-input">
+                  <label for="info">Info</label>
+                  <input type="text" name="info" id="info" />
+                </div>
+                <div class="info-input setting-label-input">
+                  <label for="info">Info</label>
+                  <input type="text" name="info" id="info" />
+                </div>
+                <div class="info-input setting-label-input">
+                  <label for="info">Info</label>
+                  <input type="text" name="info" id="info" />
+                </div>
+                <div class="info-input setting-label-input">
+                  <label for="info">Info</label>
+                  <input type="text" name="info" id="info" />
+                </div>
+                <div class="info-input setting-label-input">
+                  <label for="info">Info</label>
+                  <input type="text" name="info" id="info" />
+                </div>
+                <button class="button save">Save</button>
+              </div>
+            </div>
+            <!-- Setting Section 4 ends here -->
+          </div>
+          <!-- Setting Page ends here -->
         </div>
+      </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="chart.js"></script>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

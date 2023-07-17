@@ -1,603 +1,916 @@
 /* font */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
 /* Root variables */
 :root {
-    --color-background: #F2F2F2;
-    --colorbtn-primary: #6F4FF2;
-    --colorbtn-danger: #DC3546;
-    --color-success: #33e742;
-    --color-white: #FFFFFF;
-    --color-black: #000000;
-    --color-iris : #6C7AA0;
-    --color-light: rgba(132, 139, 200, 0.18);
-    --color-grey: #65646A;
-    --color-search: #68676E;
-    --color-background-fill: rgba(111, 79, 242, 0.5);
-    /* Border radius */
-    --card-border-radius: 2rem;
-    --border-radius-1 : 0.4rem;
-    --border-radius-2 : 0.8rem;
-    --border-radius-3 : 1.4rem;
-    /* Padding */
-    --card-padding: 1.8rem;
-    --padding-1: 1.2rem;
-    /* Box shadow */
-    --box-shadow: 0 2rem 3rem var(--color-light);
-    /* Border */
-    --border-1: 1px solid #65646a8f;
+  --color-background: #f2f2f2;
+  --colorbtn-primary: #6f4ff2;
+  --colorbtn-danger: #dc3546;
+  --color-success: #33e742;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-iris: #6c7aa0;
+  --color-light: rgba(132, 139, 200, 0.18);
+  --color-grey: #65646a;
+  --color-search: #68676e;
+  --color-background-fill: rgba(111, 79, 242, 0.5);
+  --background-input: #ffffff;
+  /* Border radius */
+  --card-border-radius: 2rem;
+  --border-radius-1: 0.4rem;
+  --border-radius-2: 0.8rem;
+  --border-radius-3: 1.4rem;
+  /* Padding */
+  --card-padding: 1.8rem;
+  --padding-1: 1.2rem;
+  /* Box shadow */
+  --box-shadow: 0 2rem 3rem var(--color-light);
+  /* Border */
+  --border-1: 1px solid #65646a8f;
+  --border-input: 1px solid grey;
+  --border-scroll: 1px solid var(--color-grey);
+  --scroll-background: #727179;
 }
 /* for dark theme */
-.dark-theme-variables{
-    --color-background: #131129;
-    --color-black: #FFFFFF;
-    --color-white: #1D1932;
+.dark-theme-variables {
+  --color-background: #131129;
+  --color-black: #ffffff;
+  --color-white: #1d1932;
+  --border-input: none;
+  --background-input: #131129;
+  --border-scroll: 1px solid #ffffff;
+  --scroll-background: #ffffff;
 }
 
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: 0;
-    border: 0;
-    text-decoration: none;
-    list-style: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+  border: 0;
+  text-decoration: none;
+  list-style: none;
 }
 html {
-    font-size: 14px;
+  font-size: 14px;
 }
 body {
-    max-width: 1440px;
-    width: 100%;
-    margin: 0 auto;
-    font-family: 'Poppins', sans-serif;
-    font-size: 0.88rem;
-    background-color: var(--color-background);
-    user-select: none;
-    overflow-x: hidden;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.88rem;
+  background-color: var(--color-background);
+  user-select: none;
+  overflow-x: hidden;
 }
 
-a{
-    color: var(--color-black);
-    cursor: pointer;
+a {
+  color: var(--color-black);
+  cursor: pointer;
 }
-:is(h1,h2,h3,h4,h5,h6,p) {
-    color: var(--color-black);
-    margin-top: 0.8rem 0;
+:is(h1, h2, h3, h4, h5, h6, p, label) {
+  color: var(--color-black);
 }
 h1 {
-    max-width: 400px;  
+  max-width: 400px;
 }
 
-.profile-photo{
-    width: 2.8rem;
-    height: 2.8rem;
-    overflow: hidden;
+.profile-photo {
+  width: 2.8rem;
+  height: 2.8rem;
+  overflow: hidden;
 }
 .text-muted {
-    color: var(--color-iris);
+  color: var(--color-iris);
 }
-.bg-primary{
-    background-color: var(--colorbtn-primary);
+.bg-primary {
+  background-color: var(--colorbtn-primary);
 }
-.bg-danger{
-    background-color: var(--colorbtn-danger);
+.bg-danger {
+  background-color: var(--colorbtn-danger);
 }
 .bg-white {
-    background: var(--color-white);
+  background: var(--color-white);
 }
 .bg-success {
-    background: var(--color-success);
+  background: var(--color-success);
 }
-.primary{
-    color: var(--colorbtn-primary);
+.primary {
+  color: var(--colorbtn-primary);
 }
-.danger{
-    color: var(--colorbtn-danger);
+.danger {
+  color: var(--colorbtn-danger);
 }
 .success {
-    color: var(--color-success);
+  color: var(--color-success);
 }
-.black{
-    color: var(--color-black);
+.black {
+  color: var(--color-black);
 }
-.iris{
-    color: var(--color-iris);
+.iris {
+  color: var(--color-iris);
 }
-.white{
-    color: var(--color-white);
+.white {
+  color: var(--color-white);
 }
 /* Container styling */
 .container {
-    display: grid;
-    width: 100%;
-    grid-template-columns: 5rem 1fr; 
+  display: grid;
+  width: 100%;
+  grid-template-columns: 5rem 1fr;
 }
-.aside{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    background-color: var(--color-white);
-    width: 5rem;
-    height: 100vh;
-    position: sticky;
-    top: 0;
-    left: 0;
+.aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: var(--color-white);
+  width: 5rem;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+.aside a:first-child {
+  margin-top: 2rem;
+}
+.aside a:last-child {
+  position: absolute;
+  bottom: 1rem;
+  left: 1.7rem;
 }
 .tab-btn.active {
-    color: var(--colorbtn-primary);
+  color: var(--colorbtn-primary);
 }
-.tab-btn{
-    color: var(--color-grey);
+.tab-btn {
+  color: var(--color-grey);
 }
-.aside .icons {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 2rem;
-    height: 3rem;
-}
+
 .main {
-    width: 90%;
-    margin: 0 auto;
+  width: 90%;
+  margin: 0 auto;
 }
 .icon {
-    margin-top: 3rem;
+  margin-top: 3rem;
 }
 /* Top section CSS Starts here */
 .top {
-    display: flex;
-    justify-content: space-between;
-    color: var(--color-grey);
-    margin-top: 1.8rem;
+  display: flex;
+  justify-content: space-between;
+  color: var(--color-grey);
+  margin-top: 1.8rem;
 }
-.search , .profile {
-    display: flex;
-    align-items: center;
-    padding-left: 1rem;
-    gap: 0.6rem;
+.search,
+.profile {
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  gap: 0.6rem;
 }
 .search {
-    background-color: var(--color-white);
-    width: 30%;
-    border-radius: var(--border-radius-2);
+  background-color: var(--color-white);
+  width: 30%;
+  border-radius: var(--border-radius-2);
 }
 .search-icon {
-    padding-bottom: 0.3rem;
+  padding-bottom: 0.3rem;
 }
 .search > .top-input {
-    height: 1.8rem;
-    width: 90%;
-    background: transparent;
+  height: 1.8rem;
+  width: 90%;
+  background: transparent;
 }
-.search >  input::placeholder {
-    font-size: 1.5rem;
+.search > input::placeholder {
+  font-size: 1.5rem;
+}
+.logo-small {
+  display: none;
 }
 
-.theme{   
-    background: transparent;
-    display: none;
+.theme {
+  background: transparent;
+  display: none;
 }
-.theme.active{
-    display: block;
+.theme.active {
+  display: block;
 }
 /* Section 1 CSS Starts here */
-.content{
-    display: none;
-  }
+.content {
+  display: none;
+}
 .content.active {
-    display: block;
-    margin-top: 3rem;
+  display: block;
+  margin-top: 3rem;
 }
 /*====================================== Home Section CSS starts here ====================================== */
-.section1{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    margin-top: 4rem;
+.section1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 4rem;
 }
 .sec1-left {
-    background-image: url(images/Discover.png);
-    color: white;
-    padding: var(--card-padding);
-    background-size: cover;
-    border-radius: var(--border-radius-3);
-    box-shadow: inset 0 0 0 1000px var(--color-background-fill);
+  background-image: url(images/Discover.png);
+  color: white;
+  padding: var(--card-padding);
+  background-size: cover;
+  border-radius: var(--border-radius-3);
+  box-shadow: inset 0 0 0 1000px var(--color-background-fill);
 }
 .sec1-left h1 {
-    color: white;
-    margin: 1rem 0;
+  color: white;
+  margin: 1rem 0;
 }
-.sec1-left p{
-    color: rgba(255, 255, 255, 0.7);
-    margin-bottom: 1rem;
+.sec1-left p {
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 1rem;
 }
-.buttons{
-    display: flex;
-    gap: 1.6rem;
+.buttons {
+  display: flex;
+  gap: 1.6rem;
 }
 .button {
-    width: 9rem;
-    height: 2.7rem;
-    border-radius: var(--border-radius-1);
-    font-weight: 600;
-    font-size: 1rem;
-    border: none;
-    background: none;
-    cursor: pointer;
-    transition: all 300ms ease;
-    color: var(--color-black);
+  width: 9rem;
+  height: 2.7rem;
+  border-radius: var(--border-radius-1);
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: all 300ms ease;
+  color: var(--color-black);
 }
 .button:hover {
-    opacity: 0.9;
+  opacity: 0.9;
 }
 .button1 {
-    background-color: var(--colorbtn-primary);
-    color: white;
+  background-color: var(--colorbtn-primary);
+  color: white;
 }
 .button2 {
-    background-color: var(--colorbtn-danger);
-    color: white;
+  background-color: var(--colorbtn-danger);
+  color: white;
 }
-.sec1-right{
-    display: grid;
-    grid-template-columns: 17rem 1fr;
-    background-color: var(--color-white);
-    padding: var(--padding-1);
-    border-radius: var(--border-radius-3);
-    gap: 1rem;
+.sec1-right {
+  display: grid;
+  grid-template-columns: 17rem 1fr;
+  background-color: var(--color-white);
+  padding: var(--padding-1);
+  border-radius: var(--border-radius-3);
+  gap: 1rem;
 }
-.sec1-right-nft img{
-    width: 100%;
+.sec1-right-nft img {
+  width: 100%;
 }
-.sec1-detail-top{
-    display: flex;
-    gap: 1rem;
-    align-items: center;
+.sec1-detail-top {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
 }
+
 .sec1-right-nft-detail h2 {
-    margin-top: 0.8rem;
+  margin-top: 0.8rem;
 }
-.sec1-detail-middle, .sec1-detail-bottom {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 0.8rem;
+.sec1-detail-middle,
+.sec1-detail-bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.8rem;
 }
-.sec1-detail-middle p{
-    font-size: 1rem;
+.sec1-detail-middle p {
+  font-size: 1rem;
 }
-.sec1-detail-bottom p{
-    font-size: 1.1rem;
+.sec1-detail-bottom p {
+  font-size: 1.1rem;
 }
 .sec1-right-nft-detail .buttons {
-    margin-top: 0.3rem;
+  margin-top: 0.3rem;
 }
 /* Section 2 CSS starts here */
 .section2 {
-    margin-top: 4rem;
+  margin-top: 4rem;
 }
 .sec2-top {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
-.sec2-a{
-    display: flex;
-    gap: 0.6rem;
-    padding-right: 2rem;
+.sec2-a {
+  display: flex;
+  gap: 0.6rem;
+  padding-right: 2rem;
 }
 .sec2-a a {
-    font-size: 1rem;
-    color: var(--color-black);
+  font-size: 1rem;
+  color: var(--color-black);
 }
 .sec2-a a:first-child {
-    background-color: var(--colorbtn-primary);
-    color: var(--color-white);
-    width: 3rem;
-    height: 1.5rem;
-    text-align: center;
-    border-radius: var(--border-radius-2);
+  background-color: var(--colorbtn-primary);
+  color: var(--color-white);
+  width: 3rem;
+  height: 1.5rem;
+  text-align: center;
+  border-radius: var(--border-radius-2);
 }
-.sec2-main {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
-    margin: 2rem 0;
+/* CSS for bids, saved and collections cards */
+.cards-all {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin: 2rem 0;
 }
-.sec2-main .card {
-    padding: var(--padding-1);
-    background-color: var(--color-white);
-    border-radius: var(--border-radius-3);
+.cards-all .card {
+  padding: var(--padding-1);
+  background-color: var(--color-white);
+  border-radius: var(--border-radius-3);
 }
-.sec2-main img {
-    width: 100%;
+.cards-all img {
+  width: 100%;
 }
 .text-right {
-    text-align: right;
-    font-size: 1rem;
+  text-align: right;
+  font-size: 1rem;
 }
-.sec2-button {
-    display: flex;
-    justify-content: center;
+.cards-all-button {
+  display: flex;
+  justify-content: center;
 }
+
 .button-card {
-    background-color: var(--colorbtn-primary);
-    color: white;
-    width: 100%;
-    margin-top: 1rem;
+  background-color: var(--colorbtn-primary);
+  color: white;
+  width: 100%;
+  margin-top: 1rem;
 }
+/* CSS for bids, saved and collections cards ends*/
 /* Section 3 CSS starts here */
 .section3 {
-    display: grid;
-    grid-template-columns: 0.5fr 1fr 0.6fr;
-    gap: 2rem;
-    margin-top: 4rem;
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 0.6fr;
+  gap: 2rem;
+  margin-top: 4rem;
 }
 .sec3-left-content {
-    display: grid;
-    gap: 1.5rem;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  margin-top: 1rem;
 }
-.sec3-left-content .artwork1, .sec3-left-content .artwork2{
-    display: flex;
-    background-color: var(--colorbtn-primary);
-    width: 3rem;
-    height: 3rem;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
+.sec3-left-content .artwork1,
+.sec3-left-content .artwork2 {
+  display: flex;
+  background-color: var(--colorbtn-primary);
+  width: 3rem;
+  height: 3rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
 }
 .sec3-left-content .artwork2 {
-    background-color: var(--colorbtn-danger);
+  background-color: var(--colorbtn-danger);
 }
-.artwork1 img, .artwork2 img {
-    width: 50%;
+.artwork1 img,
+.artwork2 img {
+  width: 50%;
 }
 .sec3-left-divs {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: var(--color-white);
-    border-radius: var(--border-radius-3);
-    padding: var(--padding-1);
-    margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--color-white);
+  border-radius: var(--border-radius-3);
+  padding: var(--padding-1);
 }
-.sec3-middle-content,.sec3-right-content{
-    background-color: var(--color-white);
-    margin-top: 1rem;
-    border-radius: var(--border-radius-3);
-    padding: var(--card-padding);
+.sec3-left-inner-divs {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.sec3-middle-content,
+.sec3-right-content {
+  background-color: var(--color-white);
+  margin-top: 1rem;
+  border-radius: var(--border-radius-3);
+  padding: var(--card-padding);
 }
 #myChart {
-    width: 100% !important;
-    height: 20rem !important;
+  width: 100% !important;
+  height: 18rem !important;
 }
-.sec3-middle h2,.sec3-right h2 {
-    color: var(--color-white);
+.sec3-middle h2,
+.sec3-right h2 {
+  color: white;
 }
 #myChart1 {
-    width: 90% !important;
-    height: 18rem !important;
-    margin: 0 auto;
+  width: 100% !important;
+  height: 16rem !important;
+  margin: 0 auto;
 }
 .label-container {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 1rem;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
 }
 .label {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
 }
-.pointer1,.pointer2 {
-    width: 1rem;
-    height: 1rem;
-    border-radius: 50%;
-    margin-right: 1rem;
+.pointer1,
+.pointer2 {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  margin-right: 1rem;
 }
 .pointer1 {
-    background-color: var(--colorbtn-primary);
+  background-color: var(--colorbtn-primary);
 }
 .pointer2 {
-    background-color: var(--color-white);
-    border: 1px solid var(--color-grey);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-grey);
 }
 
 /* Section 4 CSS */
 
 .section4 {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 2rem;
-    margin-top: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+  margin-top: 3rem;
 }
 .sec4-left-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .sec4-left-top h2 {
-    margin-top: 0;
+  margin-top: 0;
 }
 .sec4-left-inner-divs {
-    border-radius: var(--border-radius-3);
-    background-color: var(--color-white);
-    margin: 1rem 0;
+  border-radius: var(--border-radius-3);
+  background-color: var(--color-white);
+  margin: 1rem 0;
 }
-.sec4-left-divs, .sec4-right-divs {
-    display: flex;
-    justify-content: space-between;
-    padding: var(--padding-1);
-    align-items: center;
+.sec4-left-divs,
+.sec4-right-divs {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--padding-1);
+  align-items: center;
 }
-.sec4-right h2{
-    margin-top: 0;
+.sec4-right h2 {
+  margin-top: 0;
 }
 .sec4-right-divs {
-    border-radius: var(--border-radius-3);
-    background-color: var(--color-white);
+  border-radius: var(--border-radius-3);
+  background-color: var(--color-white);
 }
 .sec4-right-inner-divs {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1.8rem;
-    margin-top: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.8rem;
+  margin-top: 1rem;
 }
 .follow {
-    border: 1px solid var(--colorbtn-primary);
-    width: 6rem;
-    border-radius: var(--border-radius-2);
+  border: 1px solid var(--colorbtn-primary);
+  width: 6rem;
+  border-radius: var(--border-radius-2);
 }
 .sec4-right-pic-text {
-    display: flex;
-    gap: 2rem;
-    align-items: center;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
 }
 
 /* Section 5 CSS */
-.section5{
-    margin-bottom: 4rem;
+.section5 {
+  margin-bottom: 4rem;
+  display: grid;
+  grid-template-columns: 1fr;
 }
-.sec5-top, .sec5-main {
-    display: grid;
-    grid-template-columns: 1.5fr 1fr 1fr 1fr 1.5fr;
-    margin-top: 1rem;
+.sec5-top,
+.sec5-main {
+  display: grid;
+  grid-template-columns: minmax(300px, 1.5fr) minmax(150px, 1fr) minmax(
+      150px,
+      1fr
+    ) minmax(150px, 1fr) minmax(200px, 1.5fr);
+  margin-top: 1rem;
 }
 .sec5-main {
-    background-color: var(--color-white);
-    border-radius: var(--border-radius-3);
-    padding: var(--padding-1) ;
+  background-color: var(--color-white);
+  border-radius: var(--border-radius-3);
+  padding: var(--padding-1);
+  min-width: 70rem;
 }
-.sec5-display{
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
+.sec5-display {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
-.sec5-top-div1, .sec5-main-divs {
-    gap: 4rem;
+.sec5-top-div1,
+.sec5-main-divs {
+  gap: 4rem !important;
 }
 .sec5-top-div2 {
-    justify-content: space-between;
-    border-bottom: var(--border-1);
+  justify-content: space-between;
+  border-bottom: var(--border-1);
 }
 .sec5-top-div1 {
-    margin-left: 1.3rem;
+  margin-left: 1.3rem;
+}
+.closee {
+  background: transparent;
+  color: white;
 }
 .action {
-    color: white;
+  color: white;
 }
 /*=========================================== Bids section CSS =============================================*/
 
-.bids-section1 {
-    display: grid;
-    grid-template-columns: 1fr;
+.top-for-all {
+  display: grid;
+  grid-template-columns: 1fr;
 }
-.home-bids-link {
-    display: flex;
-    gap: 0.5rem;
+.home-all-link {
+  display: flex;
+  gap: 0.5rem;
 }
-.welcome-bids {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.welcome-all {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 /* Bids Sectionn 2 CSS */
-.bids-section2{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 3rem;
-    margin-top: 2rem;
+.bids-section2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 3rem;
+  margin-top: 2rem;
 }
 .bids-section2-divs {
-    display: flex;
-    gap: 2rem;
-    align-items: center;
-    padding: var(--padding-1);
-    background-color: var(--color-white);
-    border-radius: var(--border-radius-3);
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  padding: var(--padding-1);
+  background-color: var(--color-white);
+  border-radius: var(--border-radius-3);
 }
 .bids-section2-divs .artwork {
-    display: flex;
-    background-color: var(--colorbtn-primary);
-    width: 3rem;
-    height: 3rem;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
+  display: flex;
+  background-color: var(--colorbtn-primary);
+  width: 3rem;
+  height: 3rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
 }
-.bids-section2-divs .artwork img{
-    width: 60%;
+.bids-section2-divs .artwork img {
+  width: 60%;
 }
 .bids-section2-divs .artwork2 {
-    background-color: var(--color-success);
+  background-color: var(--color-success);
 }
 .bids-section2-divs .artwork3 {
-    background-color: #F9D62C;
+  background-color: #f9d62c;
 }
 .bids-section2-divs .artwork4 {
-    background-color: var(--colorbtn-danger);
+  background-color: var(--colorbtn-danger);
 }
 /* Bids Sectionn 3 CSS */
 .bids-section3 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3rem;
 }
 .bid-place {
-    background-color: var(--colorbtn-primary);
-    color: white;
+  background-color: var(--colorbtn-primary);
+  color: white;
 }
 .bids-sec3-top {
-    border-bottom: 1px solid var(--color-iris);
+  border-bottom: 1px solid var(--color-iris);
 }
 .bid-sec3-top-div2 {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 .bids-sec3-display {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 .close {
-    background: transparent;
-    color: var(--color-black);
+  background: transparent;
+  color: var(--color-black);
 }
-.close-hours{
-    justify-content: space-between;
+.close-hours {
+  justify-content: space-between;
 }
 .bids-sec3 {
-    margin-top: 3rem;
+  margin-top: 3rem;
 }
 
-/*=========================================== Saved items section CSS =============================================*/
+/*======================================== Collections items section CSS ==========================================*/
 
-.saved-section1 {
-    display: grid;
+.collection-section2 {
+  margin-top: 3rem;
+}
+
+/*======================================== Profile items section CSS ==========================================*/
+/* Section 2 CSS */
+.profile-section2 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+  margin: 2rem 0;
+  align-items: baseline;
+}
+.profile-sec2-left {
+  background-color: var(--color-white);
+  border-radius: var(--border-radius-2);
+  padding: var(--padding-1);
+}
+.profile-sec2-left h3,
+.profile-sec2-left p {
+  margin: 0.4rem 0;
+  font-size: 0.9rem;
+}
+.profile-sec2-inner-divs {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.4rem 0;
+}
+.profile-border-bottom {
+  border-bottom: 1px solid rgba(153, 148, 170, 0.5);
+  margin-top: 1.5rem;
+}
+.profile-sec2-inner-divs span {
+  border-radius: 50%;
+  padding: 0.4rem;
+  color: white;
+}
+.profile-sec2-inner-divs p {
+  font-size: 1rem;
+}
+.unfollow {
+  background-color: var(--colorbtn-danger);
+  color: white;
+  border-radius: var(--border-radius-2);
+}
+.profile-following {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+/* Profile section 3 and 4 Starts here */
+.profile-section3 > h2 {
+  color: white;
+}
+.profile-bought .card {
+  position: relative;
+}
+.profile-bought-bottom {
+  display: flex;
+}
+.profile-bought-bottom img {
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  right: 4rem;
+  bottom: 2rem;
+  border: 2.5px solid white;
+  border-radius: 50%;
+}
+.profile-section4 > h2 {
+  color: white;
+}
+/*======================================== Setting items section CSS ==========================================*/
+.setting-section2 {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.setting-links {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+  font-size: 1rem;
+  flex-wrap: wrap;
+}
+.setting-links a:last-child {
+  color: white;
+}
+.setting-section3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+.setting-section3 h2,
+.setting-section4 h2 {
+  margin-bottom: 1rem;
+}
+.setting-sec3-inner-divs {
+  background-color: var(--color-white);
+  padding: var(--card-padding);
+  border-radius: var(--border-radius-2);
+}
+.setting-label-input input {
+  width: 100%;
+  border: var(--border-input);
+  height: 2.5rem;
+  background: var(--background-input);
+  border-radius: var(--border-radius-1);
+  margin-top: 0.5rem;
+  color: var(--color-black);
+}
+.setting-label-input label {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.setting-profile {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+.setting-profile > div:first-child {
+  background-color: var(--colorbtn-primary);
+  color: white;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.save {
+  background-color: var(--colorbtn-primary);
+  width: 6rem;
+  color: white;
+  margin-top: 1rem;
+}
+.setting-section4 {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 3rem 0;
+}
+.setting-sec4-divs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  background-color: var(--color-white);
+  border-radius: var(--border-radius-2);
+  padding: var(--card-padding);
+}
+
+@media (max-width: 1200px) {
+  .section1 {
     grid-template-columns: 1fr;
+  }
+  /* CSS for bids, saved and collections cards */
+  .cards-all {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .section3 {
+    grid-template-columns: 1fr;
+  }
+  #myChart1 {
+    width: 40% !important;
+    height: auto !important;
+  }
+  #myChart {
+    width: 100% !important;
+    height: auto !important;
+  }
+  .section4 {
+    grid-template-columns: 1fr 1fr;
+  }
+  .sec4-right-inner-divs {
+    grid-template-columns: 1fr;
+  }
+  .display-none {
+    display: none;
+  }
+  .section5 .sec5-main:last-child {
+    margin-bottom: 2rem;
+  }
+  .sec5-container {
+    overflow-x: scroll;
+  }
+  .sec5-container::-webkit-scrollbar {
+    height: 1.7rem;
+  }
+  .sec5-container::-webkit-scrollbar-track {
+    background-color: transparent;
+    border: 1px solid var(--color-grey);
+    border-radius: var(--border-radius-2);
+  }
+  .sec5-container::-webkit-scrollbar-thumb {
+    background-color: var(--scroll-background);
+    border-radius: 10px;
+  }
+  .sec5-container::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+  }
+  .bids-section2 {
+    grid-template-columns: 1fr 1fr;
+  }
+  .profile-section2 {
+    grid-template-columns: 1fr 1fr;
+    align-items: flex-start;
+  }
+  .profile-following {
+    grid-template-columns: 1fr;
+  }
 }
-.welcome-saved {
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 5rem;
+  }
+  .logo-big {
+    display: none;
+  }
+  .aside {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
     align-items: center;
-}
-.home-saved-link {
-    display: flex;
-    gap: 0.5rem;
-}
-.saved-section2 {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
-    margin: 2rem 0;
-}
-.saved-section2 .card {
-    padding: var(--padding-1);
+    justify-content: space-between;
     background-color: var(--color-white);
-    border-radius: var(--border-radius-3);
+    width: 100%;
+    height: auto;
+    position: static;
+    padding: 0 2rem;
+    order: 1;
+  }
+  .aside a:last-child {
+    position: static;
+  }
+  .main {
+    order: 0;
+  }
+  .search {
+    width: 80%;
+  }
+  .logo-small {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 1rem;
+  }
+  .logo {
+    width: 3rem;
+  }
+  .icon {
+    margin-top: 0;
+  }
+  .sec1-right {
+    grid-template-columns: 1fr;
+  }
+  .cards-all {
+    grid-template-columns: 1fr;
+  }
+  .section4 {
+    grid-template-columns: 1fr;
+  }
+  .sec1-right .buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+  }
+  .section5 {
+    margin-top: 2rem;
+  }
+  #myChart {
+    height: auto !important;
+  }
+  #myChart1 {
+    height: auto !important;
+  }
+  .bids-section2 {
+    grid-template-columns: 1fr;
+  }
+  .profile-section2 {
+    grid-template-columns: 1fr;
+  }
+  .profile-bought-bottom img {
+    width: 4.5rem;
+    height: 4.5rem;
+    right: 5rem;
+    bottom: 1.5rem;
+  }
+  .setting-section3 {
+    grid-template-columns: 1fr;
+  }
+  .setting-sec4-divs {
+    grid-template-columns: 1fr;
+  }
 }
