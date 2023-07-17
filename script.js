@@ -11,6 +11,7 @@ tabs.forEach((tab, index) => {
 
     content.forEach(content => { content.classList.remove('active') });
     content[index].classList.add('active');
+    window.scrollTo(0, 0);
   })
 })
 theme1.addEventListener('click', () => {
