@@ -117,7 +117,7 @@ h1 {
 .container {
   display: grid;
   width: 100%;
-  grid-template-columns: 5rem 1fr;
+  grid-template-columns: 10rem 1fr;
 }
 .aside {
   display: flex;
@@ -125,7 +125,7 @@ h1 {
   align-items: center;
   justify-content: flex-start;
   background-color: var(--color-white);
-  width: 5rem;
+  width: 10rem;
   height: 100vh;
   position: sticky;
   top: 0;
@@ -135,14 +135,19 @@ h1 {
   margin-top: 2rem;
 }
 .aside a:last-child {
+  display: flex;
+  gap: 0.5rem;
   position: absolute;
   bottom: 1rem;
   left: 1.7rem;
 }
-.tab-btn.active {
+.aside a:last-child h3 {
+  color: var(--color-grey);
+}
+.tab-btn.active, .tab-btn.active h3 {
   color: var(--colorbtn-primary);
 }
-.tab-btn {
+.tab-btn, .tab-btn h3 {
   color: var(--color-grey);
 }
 
@@ -152,6 +157,10 @@ h1 {
 }
 .icon {
   margin-top: 3rem;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 0.5rem;
 }
 /* Top section CSS Starts here */
 .top {
@@ -298,27 +307,36 @@ h1 {
 
 .sec2-a {
   display: flex;
-  gap: 0.6rem;
+  gap: 1rem;
   padding-right: 2rem;
 }
-.sec2-a a {
+.sec2-a button {
   font-size: 1rem;
   color: var(--color-black);
+  width: 3rem;
+  height: 1.5rem;
+  background-color: transparent;
 }
-.sec2-a a:first-child {
+.sec2-a button.active {
   background-color: var(--colorbtn-primary);
   color: var(--color-white);
-  width: 3rem;
+  width: 4rem;
   height: 1.5rem;
   text-align: center;
   border-radius: var(--border-radius-2);
 }
+.bids-content {
+  display: none;
+}
 /* CSS for bids, saved and collections cards */
 .cards-all {
-  display: grid;
+  display: none;
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
   margin: 2rem 0;
+}
+.cards-all.active{
+  display: grid;
 }
 .cards-all .card {
   padding: var(--padding-1);
@@ -405,7 +423,7 @@ h1 {
 }
 #myChart1 {
   width: 100% !important;
-  height: 16rem !important;
+  height: auto !important;
   margin: 0 auto;
 }
 .label-container {
@@ -525,10 +543,10 @@ h1 {
 }
 .closee {
   background: transparent;
-  color: white;
+  color: var(--color-black);
 }
 .action {
-  color: white;
+  color: var(--color-black);
 }
 /*=========================================== Bids section CSS =============================================*/
 
@@ -635,6 +653,9 @@ h1 {
   border-radius: var(--border-radius-2);
   padding: var(--padding-1);
 }
+.profile-sec2-left h2 {
+  padding-top: 0.5rem;
+}
 .profile-sec2-left h3,
 .profile-sec2-left p {
   margin: 0.4rem 0;
@@ -672,7 +693,7 @@ h1 {
 
 /* Profile section 3 and 4 Starts here */
 .profile-section3 > h2 {
-  color: white;
+  color: var(--color-black);
 }
 .profile-bought .card {
   position: relative;
@@ -690,7 +711,7 @@ h1 {
   border-radius: 50%;
 }
 .profile-section4 > h2 {
-  color: white;
+  color: var(--color-black);
 }
 /*======================================== Setting items section CSS ==========================================*/
 .setting-section2 {
@@ -704,14 +725,25 @@ h1 {
   font-size: 1rem;
   flex-wrap: wrap;
 }
-.setting-links a:last-child {
-  color: white;
+.setting-links button {
+  color: var(--color-black);
+  background-color: transparent;
+  font-size: 1rem;
+}
+.setting-links button.active {
+  color: var(--colorbtn-primary);
 }
 .setting-section3 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
   margin-top: 3rem;
+}
+.setting-content {
+  display: none;
+}
+.setting-content.active {
+  display: block;
 }
 .setting-section3 h2,
 .setting-section4 h2 {
@@ -772,6 +804,15 @@ h1 {
 }
 
 @media (max-width: 1200px) {
+  .container {
+    grid-template-columns: 5rem 1fr;
+  }
+  .aside {
+    width: 5rem;
+  }
+  .aside h3 {
+    display: none;
+  }
   .section1 {
     grid-template-columns: 1fr;
   }
@@ -836,8 +877,26 @@ h1 {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 5rem;
   }
+  .top-container {
+    position: fixed;
+    width: 90%;
+    background-color: var(--color-background);
+    padding-bottom: 0.3rem;
+  }
+  .content-box {
+    padding-top: 2rem;
+  }
   .logo-big {
     display: none;
+  }
+  .aside-container {
+    display: flex;
+    height: 4rem;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: var(--color-white);
   }
   .aside {
     display: flex;
@@ -849,6 +908,7 @@ h1 {
     height: auto;
     position: static;
     padding: 0 2rem;
+    bottom: 0;
     order: 1;
   }
   .aside a:last-child {
@@ -912,5 +972,28 @@ h1 {
   }
   .setting-sec4-divs {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 576px){
+  .top {
+    margin-top: 1rem;
+  }
+  .search {
+    height: 2.5rem;
+  }
+  .search > .top-input {
+    height: 2.5rem;
+    width: 90%;
+    background: transparent;
+  }
+  .search > input::placeholder {
+    font-size: 1rem;
+  }
+  .logo-small .logo {
+    width: 2.5rem;
+  }
+  .top-profile-avatar {
+    width: 2.5rem;
   }
 }

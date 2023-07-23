@@ -14,59 +14,70 @@
     <!-- All Content container -->
     <div class="container">
       <!-- aside of the container -->
-      <div class="aside">
-        <a href="" class="logo-big">
-          <img src="images/Logo-light.svg" alt="Logo-light" />
-        </a>
-        <button class="icon bg-white tab-btn active">
-          <span class="material-symbols-sharp"> grid_view </span>
-        </button>
-        <button class="icon bg-white tab-btn">
-          <span class="material-symbols-sharp"> assignment </span>
-        </button>
-        <button class="icon bg-white tab-btn">
-          <span class="material-symbols-sharp"> favorite </span>
-        </button>
-        <button class="icon bg-white tab-btn">
-          <span class="material-symbols-sharp"> star </span>
-        </button>
-        <button class="icon bg-white tab-btn">
-          <span class="material-symbols-sharp"> account_circle </span>
-        </button>
-        <button class="icon bg-white tab-btn">
-          <span class="material-symbols-sharp"> settings </span>
-        </button>
-        <a href="">
-          <img src="images/sign-out.svg" alt="sign-out" />
-        </a>
+      <div class="aside-container">
+        <div class="aside">
+          <a href="" class="logo-big">
+            <img src="images/Logo-light.svg" alt="Logo-light" />
+          </a>
+          <button class="icon bg-white tab-btn active">
+            <span class="material-symbols-sharp"> grid_view </span>
+            <h3>Dashboard</h3>
+          </button>
+          <button class="icon bg-white tab-btn">
+            <span class="material-symbols-sharp"> assignment </span>
+            <h3>Bids</h3>
+          </button>
+          <button class="icon bg-white tab-btn">
+            <span class="material-symbols-sharp"> favorite </span>
+            <h3>Saved</h3>
+          </button>
+          <button class="icon bg-white tab-btn">
+            <span class="material-symbols-sharp"> star </span>
+            <h3>Collection</h3>
+          </button>
+          <button class="icon bg-white tab-btn">
+            <span class="material-symbols-sharp"> account_circle </span>
+            <h3>Profile</h3>
+          </button>
+          <button class="icon bg-white tab-btn">
+            <span class="material-symbols-sharp"> settings </span>
+            <h3>Setting</h3>
+          </button>
+          <a href="">
+            <img src="images/sign-out.svg" alt="sign-out" />
+            <h3>Sign out</h3>
+          </a>
+        </div>
       </div>
       <!-- aside ends here -->
       <!-- Main container -->
       <div class="main">
         <!-- Top Starts here -->
-        <div class="top">
-          <div class="logo-small">
-            <img src="images/Logo-light.svg" alt="" class="logo" />
-          </div>
-          <div class="search">
-            <span class="material-symbols-sharp search-icon">search</span>
-            <input type="search" placeholder="Search Here" class="top-input" />
-          </div>
-          <div class="profile">
-            <button class="dark theme theme1 active">
-              <span class="material-symbols-sharp theme-toggler"
-                >dark_mode</span
+        <div class="top-container">
+          <div class="top">
+            <div class="logo-small">
+              <img src="images/Logo-light.svg" alt="" class="logo" />
+            </div>
+            <div class="search">
+              <span class="material-symbols-sharp search-icon">search</span>
+              <input type="search" placeholder="Search Here" class="top-input" />
+            </div>
+            <div class="profile">
+              <button class="dark theme theme1 active">
+                <span class="material-symbols-sharp theme-toggler"
+                  >dark_mode</span
+                >
+              </button>
+              <button class="light theme theme2">
+                <span class="material-symbols-sharp theme-toggler"
+                  >light_mode</span
+                >
+              </button>
+              <a href=""
+                ><span class="material-symbols-sharp">notifications</span></a
               >
-            </button>
-            <button class="light theme theme2">
-              <span class="material-symbols-sharp theme-toggler"
-                >light_mode</span
-              >
-            </button>
-            <a href=""
-              ><span class="material-symbols-sharp">notifications</span></a
-            >
-            <a href=""><img src="images/id-avatar.png" alt="id-avatar" /></a>
+              <a href=""><img src="images/id-avatar.png" alt="id-avatar" class="top-profile-avatar"/></a>
+            </div>
           </div>
         </div>
         <!-- Top ends here -->
@@ -121,12 +132,272 @@
               <div class="sec2-top">
                 <h2 class="trending">Trending Bids</h2>
                 <div class="sec2-a">
-                  <a href="">All</a>
-                  <a href="">Artwork</a>
-                  <a href="">Book</a>
+                  <button href="" class="bids-btn active">All</button>
+                  <button href="" class="bids-btn">Artwork</button>
+                  <button href="" class="bids-btn">Book</button>
                 </div>
               </div>
-              <div class="sec2-main cards-all">
+              <div class="sec2-main bids-content cards-all active">
+                <div class="card">
+                  <img src="images/NFT (1).png" alt="NFT" />
+                  <h2>Liquid Wave</h2>
+                  <div class="sec1-detail-middle">
+                    <p>Auction time</p>
+                    <p>Current Bid</p>
+                  </div>
+                  <p class="primary text-right">0.05 ETH</p>
+                  <div class="sec1-detail-bottom">
+                    <p class="iris">3h 1m 50s</p>
+                    <p class="iris">0.15 ETH</p>
+                  </div>
+                  <div class="sec2-button cards-all-button">
+                    <button class="button button-card">Place a Bid</button>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="images/NFT (1).png" alt="NFT" />
+                  <h2>Liquid Wave</h2>
+                  <div class="sec1-detail-middle">
+                    <p>Auction time</p>
+                    <p>Current Bid</p>
+                  </div>
+                  <p class="primary text-right">0.05 ETH</p>
+                  <div class="sec1-detail-bottom">
+                    <p class="iris">3h 1m 50s</p>
+                    <p class="iris">0.15 ETH</p>
+                  </div>
+                  <div class="sec2-button cards-all-button">
+                    <button class="button button-card">Place a Bid</button>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="images/NFT (1).png" alt="NFT" />
+                  <h2>Liquid Wave</h2>
+                  <div class="sec1-detail-middle">
+                    <p>Auction time</p>
+                    <p>Current Bid</p>
+                  </div>
+                  <p class="primary text-right">0.05 ETH</p>
+                  <div class="sec1-detail-bottom">
+                    <p class="iris">3h 1m 50s</p>
+                    <p class="iris">0.15 ETH</p>
+                  </div>
+                  <div class="sec2-button cards-all-button">
+                    <button class="button button-card">Place a Bid</button>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="images/NFT (1).png" alt="NFT" />
+                  <h2>Liquid Wave</h2>
+                  <div class="sec1-detail-middle">
+                    <p>Auction time</p>
+                    <p>Current Bid</p>
+                  </div>
+                  <p class="primary text-right">0.05 ETH</p>
+                  <div class="sec1-detail-bottom">
+                    <p class="iris">3h 1m 50s</p>
+                    <p class="iris">0.15 ETH</p>
+                  </div>
+                  <div class="sec2-button cards-all-button">
+                    <button class="button button-card">Place a Bid</button>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="images/NFT (1).png" alt="NFT" />
+                  <h2>Liquid Wave</h2>
+                  <div class="sec1-detail-middle">
+                    <p>Auction time</p>
+                    <p>Current Bid</p>
+                  </div>
+                  <p class="primary text-right">0.05 ETH</p>
+                  <div class="sec1-detail-bottom">
+                    <p class="iris">3h 1m 50s</p>
+                    <p class="iris">0.15 ETH</p>
+                  </div>
+                  <div class="sec2-button cards-all-button">
+                    <button class="button button-card">Place a Bid</button>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="images/NFT (1).png" alt="NFT" />
+                  <h2>Liquid Wave</h2>
+                  <div class="sec1-detail-middle">
+                    <p>Auction time</p>
+                    <p>Current Bid</p>
+                  </div>
+                  <p class="primary text-right">0.05 ETH</p>
+                  <div class="sec1-detail-bottom">
+                    <p class="iris">3h 1m 50s</p>
+                    <p class="iris">0.15 ETH</p>
+                  </div>
+                  <div class="sec2-button cards-all-button">
+                    <button class="button button-card">Place a Bid</button>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="images/NFT (1).png" alt="NFT" />
+                  <h2>Liquid Wave</h2>
+                  <div class="sec1-detail-middle">
+                    <p>Auction time</p>
+                    <p>Current Bid</p>
+                  </div>
+                  <p class="primary text-right">0.05 ETH</p>
+                  <div class="sec1-detail-bottom">
+                    <p class="iris">3h 1m 50s</p>
+                    <p class="iris">0.15 ETH</p>
+                  </div>
+                  <div class="sec2-button cards-all-button">
+                    <button class="button button-card">Place a Bid</button>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="images/NFT (1).png" alt="NFT" />
+                  <h2>Liquid Wave</h2>
+                  <div class="sec1-detail-middle">
+                    <p>Auction time</p>
+                    <p>Current Bid</p>
+                  </div>
+                  <p class="primary text-right">0.05 ETH</p>
+                  <div class="sec1-detail-bottom">
+                    <p class="iris">3h 1m 50s</p>
+                    <p class="iris">0.15 ETH</p>
+                  </div>
+                  <div class="sec2-button cards-all-button">
+                    <button class="button button-card">Place a Bid</button>
+                  </div>
+                </div>
+              </div>
+              <div class="sec2-main cards-all bids-content">
+                <div class="card">
+                  <img src="images/NFT (1).png" alt="NFT" />
+                  <h2>Liquid Wave</h2>
+                  <div class="sec1-detail-middle">
+                    <p>Auction time</p>
+                    <p>Current Bid</p>
+                  </div>
+                  <p class="primary text-right">0.05 ETH</p>
+                  <div class="sec1-detail-bottom">
+                    <p class="iris">3h 1m 50s</p>
+                    <p class="iris">0.15 ETH</p>
+                  </div>
+                  <div class="sec2-button cards-all-button">
+                    <button class="button button-card">Place a Bid</button>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="images/NFT (1).png" alt="NFT" />
+                  <h2>Liquid Wave</h2>
+                  <div class="sec1-detail-middle">
+                    <p>Auction time</p>
+                    <p>Current Bid</p>
+                  </div>
+                  <p class="primary text-right">0.05 ETH</p>
+                  <div class="sec1-detail-bottom">
+                    <p class="iris">3h 1m 50s</p>
+                    <p class="iris">0.15 ETH</p>
+                  </div>
+                  <div class="sec2-button cards-all-button">
+                    <button class="button button-card">Place a Bid</button>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="images/NFT (1).png" alt="NFT" />
+                  <h2>Liquid Wave</h2>
+                  <div class="sec1-detail-middle">
+                    <p>Auction time</p>
+                    <p>Current Bid</p>
+                  </div>
+                  <p class="primary text-right">0.05 ETH</p>
+                  <div class="sec1-detail-bottom">
+                    <p class="iris">3h 1m 50s</p>
+                    <p class="iris">0.15 ETH</p>
+                  </div>
+                  <div class="sec2-button cards-all-button">
+                    <button class="button button-card">Place a Bid</button>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="images/NFT (1).png" alt="NFT" />
+                  <h2>Liquid Wave</h2>
+                  <div class="sec1-detail-middle">
+                    <p>Auction time</p>
+                    <p>Current Bid</p>
+                  </div>
+                  <p class="primary text-right">0.05 ETH</p>
+                  <div class="sec1-detail-bottom">
+                    <p class="iris">3h 1m 50s</p>
+                    <p class="iris">0.15 ETH</p>
+                  </div>
+                  <div class="sec2-button cards-all-button">
+                    <button class="button button-card">Place a Bid</button>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="images/NFT (1).png" alt="NFT" />
+                  <h2>Liquid Wave</h2>
+                  <div class="sec1-detail-middle">
+                    <p>Auction time</p>
+                    <p>Current Bid</p>
+                  </div>
+                  <p class="primary text-right">0.05 ETH</p>
+                  <div class="sec1-detail-bottom">
+                    <p class="iris">3h 1m 50s</p>
+                    <p class="iris">0.15 ETH</p>
+                  </div>
+                  <div class="sec2-button cards-all-button">
+                    <button class="button button-card">Place a Bid</button>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="images/NFT (1).png" alt="NFT" />
+                  <h2>Liquid Wave</h2>
+                  <div class="sec1-detail-middle">
+                    <p>Auction time</p>
+                    <p>Current Bid</p>
+                  </div>
+                  <p class="primary text-right">0.05 ETH</p>
+                  <div class="sec1-detail-bottom">
+                    <p class="iris">3h 1m 50s</p>
+                    <p class="iris">0.15 ETH</p>
+                  </div>
+                  <div class="sec2-button cards-all-button">
+                    <button class="button button-card">Place a Bid</button>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="images/NFT (1).png" alt="NFT" />
+                  <h2>Liquid Wave</h2>
+                  <div class="sec1-detail-middle">
+                    <p>Auction time</p>
+                    <p>Current Bid</p>
+                  </div>
+                  <p class="primary text-right">0.05 ETH</p>
+                  <div class="sec1-detail-bottom">
+                    <p class="iris">3h 1m 50s</p>
+                    <p class="iris">0.15 ETH</p>
+                  </div>
+                  <div class="sec2-button cards-all-button">
+                    <button class="button button-card">Place a Bid</button>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="images/NFT (1).png" alt="NFT" />
+                  <h2>Liquid Wave</h2>
+                  <div class="sec1-detail-middle">
+                    <p>Auction time</p>
+                    <p>Current Bid</p>
+                  </div>
+                  <p class="primary text-right">0.05 ETH</p>
+                  <div class="sec1-detail-bottom">
+                    <p class="iris">3h 1m 50s</p>
+                    <p class="iris">0.15 ETH</p>
+                  </div>
+                  <div class="sec2-button cards-all-button">
+                    <button class="button button-card">Place a Bid</button>
+                  </div>
+                </div>
+              </div>
+              <div class="sec2-main cards-all bids-content">
                 <div class="card">
                   <img src="images/NFT (1).png" alt="NFT" />
                   <h2>Liquid Wave</h2>
@@ -824,7 +1095,7 @@
             </div>
             <!-- Saved Section 1 starts here -->
             <!-- Saved section 2 starts here -->
-            <div class="saved-section2 cards-all">
+            <div class="saved-section2 cards-all active">
               <div class="card">
                 <img src="images/NFT (1).png" alt="NFT" />
                 <h2>Liquid Wave</h2>
@@ -977,14 +1248,274 @@
             <!-- Collection Section 2 starts here -->
             <div class="collection-section2">
               <div class="sec2-a">
-                <a href="">All</a>
-                <a href="">Artwork</a>
-                <a href="">Book</a>
+                <button href="" class="collection-btn active">All</button>
+                <button href="" class="collection-btn">Artwork</button>
+                <button href="" class="collection-btn">Book</button>
               </div>
             </div>
             <!-- Collection Section 2 ends here -->
             <!-- Collection Section 3 starts here -->
-            <div class="collection-section3 cards-all">
+            <div class="collection-section3 collection-content cards-all active">
+              <div class="card">
+                <img src="images/NFT (1).png" alt="NFT" />
+                <h2>Liquid Wave</h2>
+                <div class="sec1-detail-middle">
+                  <p>Auction time</p>
+                  <p>Current Bid</p>
+                </div>
+                <p class="primary text-right">0.05 ETH</p>
+                <div class="sec1-detail-bottom">
+                  <p class="iris">3h 1m 50s</p>
+                  <p class="iris">0.15 ETH</p>
+                </div>
+                <div class="collection-sec2-button cards-all-button">
+                  <button class="button button-card">Place a Bid</button>
+                </div>
+              </div>
+              <div class="card">
+                <img src="images/NFT (1).png" alt="NFT" />
+                <h2>Liquid Wave</h2>
+                <div class="sec1-detail-middle">
+                  <p>Auction time</p>
+                  <p>Current Bid</p>
+                </div>
+                <p class="primary text-right">0.05 ETH</p>
+                <div class="sec1-detail-bottom">
+                  <p class="iris">3h 1m 50s</p>
+                  <p class="iris">0.15 ETH</p>
+                </div>
+                <div class="collection-sec2-button cards-all-button">
+                  <button class="button button-card">Place a Bid</button>
+                </div>
+              </div>
+              <div class="card">
+                <img src="images/NFT (1).png" alt="NFT" />
+                <h2>Liquid Wave</h2>
+                <div class="sec1-detail-middle">
+                  <p>Auction time</p>
+                  <p>Current Bid</p>
+                </div>
+                <p class="primary text-right">0.05 ETH</p>
+                <div class="sec1-detail-bottom">
+                  <p class="iris">3h 1m 50s</p>
+                  <p class="iris">0.15 ETH</p>
+                </div>
+                <div class="collection-sec2-button cards-all-button">
+                  <button class="button button-card">Place a Bid</button>
+                </div>
+              </div>
+              <div class="card">
+                <img src="images/NFT (1).png" alt="NFT" />
+                <h2>Liquid Wave</h2>
+                <div class="sec1-detail-middle">
+                  <p>Auction time</p>
+                  <p>Current Bid</p>
+                </div>
+                <p class="primary text-right">0.05 ETH</p>
+                <div class="sec1-detail-bottom">
+                  <p class="iris">3h 1m 50s</p>
+                  <p class="iris">0.15 ETH</p>
+                </div>
+                <div class="collection-sec2-button cards-all-button">
+                  <button class="button button-card">Place a Bid</button>
+                </div>
+              </div>
+              <div class="card">
+                <img src="images/NFT (1).png" alt="NFT" />
+                <h2>Liquid Wave</h2>
+                <div class="sec1-detail-middle">
+                  <p>Auction time</p>
+                  <p>Current Bid</p>
+                </div>
+                <p class="primary text-right">0.05 ETH</p>
+                <div class="sec1-detail-bottom">
+                  <p class="iris">3h 1m 50s</p>
+                  <p class="iris">0.15 ETH</p>
+                </div>
+                <div class="collection-sec2-button cards-all-button">
+                  <button class="button button-card">Place a Bid</button>
+                </div>
+              </div>
+              <div class="card">
+                <img src="images/NFT (1).png" alt="NFT" />
+                <h2>Liquid Wave</h2>
+                <div class="sec1-detail-middle">
+                  <p>Auction time</p>
+                  <p>Current Bid</p>
+                </div>
+                <p class="primary text-right">0.05 ETH</p>
+                <div class="sec1-detail-bottom">
+                  <p class="iris">3h 1m 50s</p>
+                  <p class="iris">0.15 ETH</p>
+                </div>
+                <div class="collection-sec2-button cards-all-button">
+                  <button class="button button-card">Place a Bid</button>
+                </div>
+              </div>
+              <div class="card">
+                <img src="images/NFT (1).png" alt="NFT" />
+                <h2>Liquid Wave</h2>
+                <div class="sec1-detail-middle">
+                  <p>Auction time</p>
+                  <p>Current Bid</p>
+                </div>
+                <p class="primary text-right">0.05 ETH</p>
+                <div class="sec1-detail-bottom">
+                  <p class="iris">3h 1m 50s</p>
+                  <p class="iris">0.15 ETH</p>
+                </div>
+                <div class="collection-sec2-button cards-all-button">
+                  <button class="button button-card">Place a Bid</button>
+                </div>
+              </div>
+              <div class="card">
+                <img src="images/NFT (1).png" alt="NFT" />
+                <h2>Liquid Wave</h2>
+                <div class="sec1-detail-middle">
+                  <p>Auction time</p>
+                  <p>Current Bid</p>
+                </div>
+                <p class="primary text-right">0.05 ETH</p>
+                <div class="sec1-detail-bottom">
+                  <p class="iris">3h 1m 50s</p>
+                  <p class="iris">0.15 ETH</p>
+                </div>
+                <div class="collection-sec2-button cards-all-button">
+                  <button class="button button-card">Place a Bid</button>
+                </div>
+              </div>
+            </div>
+            <div class="collection-section3 collection-content cards-all">
+              <div class="card">
+                <img src="images/NFT (1).png" alt="NFT" />
+                <h2>Liquid Wave</h2>
+                <div class="sec1-detail-middle">
+                  <p>Auction time</p>
+                  <p>Current Bid</p>
+                </div>
+                <p class="primary text-right">0.05 ETH</p>
+                <div class="sec1-detail-bottom">
+                  <p class="iris">3h 1m 50s</p>
+                  <p class="iris">0.15 ETH</p>
+                </div>
+                <div class="collection-sec2-button cards-all-button">
+                  <button class="button button-card">Place a Bid</button>
+                </div>
+              </div>
+              <div class="card">
+                <img src="images/NFT (1).png" alt="NFT" />
+                <h2>Liquid Wave</h2>
+                <div class="sec1-detail-middle">
+                  <p>Auction time</p>
+                  <p>Current Bid</p>
+                </div>
+                <p class="primary text-right">0.05 ETH</p>
+                <div class="sec1-detail-bottom">
+                  <p class="iris">3h 1m 50s</p>
+                  <p class="iris">0.15 ETH</p>
+                </div>
+                <div class="collection-sec2-button cards-all-button">
+                  <button class="button button-card">Place a Bid</button>
+                </div>
+              </div>
+              <div class="card">
+                <img src="images/NFT (1).png" alt="NFT" />
+                <h2>Liquid Wave</h2>
+                <div class="sec1-detail-middle">
+                  <p>Auction time</p>
+                  <p>Current Bid</p>
+                </div>
+                <p class="primary text-right">0.05 ETH</p>
+                <div class="sec1-detail-bottom">
+                  <p class="iris">3h 1m 50s</p>
+                  <p class="iris">0.15 ETH</p>
+                </div>
+                <div class="collection-sec2-button cards-all-button">
+                  <button class="button button-card">Place a Bid</button>
+                </div>
+              </div>
+              <div class="card">
+                <img src="images/NFT (1).png" alt="NFT" />
+                <h2>Liquid Wave</h2>
+                <div class="sec1-detail-middle">
+                  <p>Auction time</p>
+                  <p>Current Bid</p>
+                </div>
+                <p class="primary text-right">0.05 ETH</p>
+                <div class="sec1-detail-bottom">
+                  <p class="iris">3h 1m 50s</p>
+                  <p class="iris">0.15 ETH</p>
+                </div>
+                <div class="collection-sec2-button cards-all-button">
+                  <button class="button button-card">Place a Bid</button>
+                </div>
+              </div>
+              <div class="card">
+                <img src="images/NFT (1).png" alt="NFT" />
+                <h2>Liquid Wave</h2>
+                <div class="sec1-detail-middle">
+                  <p>Auction time</p>
+                  <p>Current Bid</p>
+                </div>
+                <p class="primary text-right">0.05 ETH</p>
+                <div class="sec1-detail-bottom">
+                  <p class="iris">3h 1m 50s</p>
+                  <p class="iris">0.15 ETH</p>
+                </div>
+                <div class="collection-sec2-button cards-all-button">
+                  <button class="button button-card">Place a Bid</button>
+                </div>
+              </div>
+              <div class="card">
+                <img src="images/NFT (1).png" alt="NFT" />
+                <h2>Liquid Wave</h2>
+                <div class="sec1-detail-middle">
+                  <p>Auction time</p>
+                  <p>Current Bid</p>
+                </div>
+                <p class="primary text-right">0.05 ETH</p>
+                <div class="sec1-detail-bottom">
+                  <p class="iris">3h 1m 50s</p>
+                  <p class="iris">0.15 ETH</p>
+                </div>
+                <div class="collection-sec2-button cards-all-button">
+                  <button class="button button-card">Place a Bid</button>
+                </div>
+              </div>
+              <div class="card">
+                <img src="images/NFT (1).png" alt="NFT" />
+                <h2>Liquid Wave</h2>
+                <div class="sec1-detail-middle">
+                  <p>Auction time</p>
+                  <p>Current Bid</p>
+                </div>
+                <p class="primary text-right">0.05 ETH</p>
+                <div class="sec1-detail-bottom">
+                  <p class="iris">3h 1m 50s</p>
+                  <p class="iris">0.15 ETH</p>
+                </div>
+                <div class="collection-sec2-button cards-all-button">
+                  <button class="button button-card">Place a Bid</button>
+                </div>
+              </div>
+              <div class="card">
+                <img src="images/NFT (1).png" alt="NFT" />
+                <h2>Liquid Wave</h2>
+                <div class="sec1-detail-middle">
+                  <p>Auction time</p>
+                  <p>Current Bid</p>
+                </div>
+                <p class="primary text-right">0.05 ETH</p>
+                <div class="sec1-detail-bottom">
+                  <p class="iris">3h 1m 50s</p>
+                  <p class="iris">0.15 ETH</p>
+                </div>
+                <div class="collection-sec2-button cards-all-button">
+                  <button class="button button-card">Place a Bid</button>
+                </div>
+              </div>
+            </div>
+            <div class="collection-section3 collection-content cards-all">
               <div class="card">
                 <img src="images/NFT (1).png" alt="NFT" />
                 <h2>Liquid Wave</h2>
@@ -1206,7 +1737,7 @@
             <!-- Profile Section 3 starts here -->
             <div class="profile-section3">
               <h2>My Bought</h2>
-              <div class="profile-bought cards-all">
+              <div class="profile-bought cards-all active">
                 <div class="card">
                   <div>
                     <img src="images/NFT (1).png" alt="NFT" />
@@ -1249,7 +1780,7 @@
             <!-- Profile Section 4 starts here  -->
             <div class="profile-section4">
               <h2>My Collections</h2>
-              <div class="profile-bought cards-all">
+              <div class="profile-bought cards-all active">
                 <div class="card">
                   <div>
                     <img src="images/NFT (1).png" alt="NFT" />
@@ -1290,7 +1821,7 @@
             </div>
           </div>
           <!-- Setting Page starts here -->
-          <div class="setting content">
+          <div class="setting content" id="setting">
             <!-- Setting section 1 starts here -->
             <div class="setting-section1 top-for-all">
               <div>
@@ -1309,81 +1840,428 @@
             <!-- Setting Section 2 starts here -->
             <div class="setting-section2">
               <div class="setting-links">
-                <a href="" class="primary">Profile</a>
-                <a href="">Application</a>
-                <a href="">Security</a>
-                <a href="">Activity</a>
-                <a href="">Payment Method</a>
-                <a href="">API</a>
+                <button href="" class="setting-btn active">Profile</button>
+                <button href="" class="setting-btn">Application</button>
+                <button href="" class="setting-btn">Security</button>
+                <button href="" class="setting-btn">Activity</button>
+                <button href="" class="setting-btn">Payment Method</button>
+                <button href="" class="setting-btn">API</button>
               </div>
             </div>
             <!-- Setting Section 2 ends here -->
             <!-- Section section 3 starts here -->
-            <div class="setting-section3">
-              <div class="setting-sec3-divs">
-                <h2>User Profile</h2>
-                <div class="setting-sec3-inner-divs">
-                  <div class="full-name-input setting-label-input">
-                    <label for="fullname">Full Name</label>
-                    <input type="text" name="fullname" id="fullname" />
-                  </div>
-                  <div class="setting-profile">
-                    <div>
-                      <span class="material-symbols-sharp"> person </span>
+            <div class="setting-content active">
+              <div class="setting-section3">
+                <div class="setting-sec3-divs">
+                  <h2>User Profile</h2>
+                  <div class="setting-sec3-inner-divs">
+                    <div class="full-name-input setting-label-input">
+                      <label for="fullname">Full Name</label>
+                      <input type="text" name="fullname" id="fullname" />
                     </div>
-                    <div>
-                      <h3>John Smith</h3>
-                      <p>Welcome Setting Page</p>
+                    <div class="setting-profile">
+                      <div>
+                        <span class="material-symbols-sharp"> person </span>
+                      </div>
+                      <div>
+                        <h3>John Smith</h3>
+                        <p>Welcome Setting Page</p>
+                      </div>
                     </div>
+                    <button class="button save">Save</button>
                   </div>
-                  <button class="button save">Save</button>
+                </div>
+                <div class="setting-sec3-divs">
+                  <h2>User Profile</h2>
+                  <div class="setting-sec3-inner-divs">
+                    <div class="email-input setting-label-input">
+                      <label for="email">Email</label>
+                      <input type="email" name="email" id="email" />
+                    </div>
+                    <div class="password-input setting-label-input">
+                      <label for="password">Password</label>
+                      <input type="password" name="password" id="password" />
+                    </div>
+                    <button class="button save">Save</button>
+                  </div>
                 </div>
               </div>
-              <div class="setting-sec3-divs">
-                <h2>User Profile</h2>
-                <div class="setting-sec3-inner-divs">
-                  <div class="email-input setting-label-input">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" />
+              <!-- Setting Section 3 ends here -->
+              <!-- Setting Section 4 starts here -->
+              <div class="setting-section4">
+                <h2>Personal Information</h2>
+                <div class="setting-sec4-divs">
+                  <div class="info-input setting-label-input">
+                    <label for="info">Info</label>
+                    <input type="text" name="info" id="info" />
                   </div>
-                  <div class="password-input setting-label-input">
-                    <label for="password">Password</label>
-                    <input type="password" name="password" id="password" />
+                  <div class="info-input setting-label-input">
+                    <label for="info">Info</label>
+                    <input type="text" name="info" id="info" />
+                  </div>
+                  <div class="info-input setting-label-input">
+                    <label for="info">Info</label>
+                    <input type="text" name="info" id="info" />
+                  </div>
+                  <div class="info-input setting-label-input">
+                    <label for="info">Info</label>
+                    <input type="text" name="info" id="info" />
+                  </div>
+                  <div class="info-input setting-label-input">
+                    <label for="info">Info</label>
+                    <input type="text" name="info" id="info" />
+                  </div>
+                  <div class="info-input setting-label-input">
+                    <label for="info">Info</label>
+                    <input type="text" name="info" id="info" />
                   </div>
                   <button class="button save">Save</button>
                 </div>
               </div>
             </div>
-            <!-- Setting Section 3 ends here -->
-            <!-- Setting Section 4 starts here -->
-            <div class="setting-section4">
-              <h2>Personal Information</h2>
-              <div class="setting-sec4-divs">
-                <div class="info-input setting-label-input">
-                  <label for="info">Info</label>
-                  <input type="text" name="info" id="info" />
+            <div class="setting-content">
+              <div class="setting-section3">
+                <div class="setting-sec3-divs">
+                  <h2>User Profile</h2>
+                  <div class="setting-sec3-inner-divs">
+                    <div class="full-name-input setting-label-input">
+                      <label for="fullname">Full Name</label>
+                      <input type="text" name="fullname" id="fullname" />
+                    </div>
+                    <div class="setting-profile">
+                      <div>
+                        <span class="material-symbols-sharp"> person </span>
+                      </div>
+                      <div>
+                        <h3>John Smith</h3>
+                        <p>Welcome Setting Page</p>
+                      </div>
+                    </div>
+                    <button class="button save">Save</button>
+                  </div>
                 </div>
-                <div class="info-input setting-label-input">
-                  <label for="info">Info</label>
-                  <input type="text" name="info" id="info" />
+                <div class="setting-sec3-divs">
+                  <h2>User Profile</h2>
+                  <div class="setting-sec3-inner-divs">
+                    <div class="email-input setting-label-input">
+                      <label for="email">Email</label>
+                      <input type="email" name="email" id="email" />
+                    </div>
+                    <div class="password-input setting-label-input">
+                      <label for="password">Password</label>
+                      <input type="password" name="password" id="password" />
+                    </div>
+                    <button class="button save">Save</button>
+                  </div>
                 </div>
-                <div class="info-input setting-label-input">
-                  <label for="info">Info</label>
-                  <input type="text" name="info" id="info" />
+              </div>
+              <!-- Setting Section 3 ends here -->
+              <!-- Setting Section 4 starts here -->
+              <div class="setting-section4">
+                <h2>Personal Information</h2>
+                <div class="setting-sec4-divs">
+                  <div class="info-input setting-label-input">
+                    <label for="info">Info</label>
+                    <input type="text" name="info" id="info" />
+                  </div>
+                  <div class="info-input setting-label-input">
+                    <label for="info">Info</label>
+                    <input type="text" name="info" id="info" />
+                  </div>
+                  <div class="info-input setting-label-input">
+                    <label for="info">Info</label>
+                    <input type="text" name="info" id="info" />
+                  </div>
+                  <div class="info-input setting-label-input">
+                    <label for="info">Info</label>
+                    <input type="text" name="info" id="info" />
+                  </div>
+                  <div class="info-input setting-label-input">
+                    <label for="info">Info</label>
+                    <input type="text" name="info" id="info" />
+                  </div>
+                  <div class="info-input setting-label-input">
+                    <label for="info">Info</label>
+                    <input type="text" name="info" id="info" />
+                  </div>
+                  <button class="button save">Save</button>
                 </div>
-                <div class="info-input setting-label-input">
-                  <label for="info">Info</label>
-                  <input type="text" name="info" id="info" />
+              </div>
+            </div>
+            <div class="setting-content">
+              <div class="setting-section3">
+                <div class="setting-sec3-divs">
+                  <h2>User Profile</h2>
+                  <div class="setting-sec3-inner-divs">
+                    <div class="full-name-input setting-label-input">
+                      <label for="fullname">Full Name</label>
+                      <input type="text" name="fullname" id="fullname" />
+                    </div>
+                    <div class="setting-profile">
+                      <div>
+                        <span class="material-symbols-sharp"> person </span>
+                      </div>
+                      <div>
+                        <h3>John Smith</h3>
+                        <p>Welcome Setting Page</p>
+                      </div>
+                    </div>
+                    <button class="button save">Save</button>
+                  </div>
                 </div>
-                <div class="info-input setting-label-input">
-                  <label for="info">Info</label>
-                  <input type="text" name="info" id="info" />
+                <div class="setting-sec3-divs">
+                  <h2>User Profile</h2>
+                  <div class="setting-sec3-inner-divs">
+                    <div class="email-input setting-label-input">
+                      <label for="email">Email</label>
+                      <input type="email" name="email" id="email" />
+                    </div>
+                    <div class="password-input setting-label-input">
+                      <label for="password">Password</label>
+                      <input type="password" name="password" id="password" />
+                    </div>
+                    <button class="button save">Save</button>
+                  </div>
                 </div>
-                <div class="info-input setting-label-input">
-                  <label for="info">Info</label>
-                  <input type="text" name="info" id="info" />
+              </div>
+              <!-- Setting Section 3 ends here -->
+              <!-- Setting Section 4 starts here -->
+              <div class="setting-section4">
+                <h2>Personal Information</h2>
+                <div class="setting-sec4-divs">
+                  <div class="info-input setting-label-input">
+                    <label for="info">Info</label>
+                    <input type="text" name="info" id="info" />
+                  </div>
+                  <div class="info-input setting-label-input">
+                    <label for="info">Info</label>
+                    <input type="text" name="info" id="info" />
+                  </div>
+                  <div class="info-input setting-label-input">
+                    <label for="info">Info</label>
+                    <input type="text" name="info" id="info" />
+                  </div>
+                  <div class="info-input setting-label-input">
+                    <label for="info">Info</label>
+                    <input type="text" name="info" id="info" />
+                  </div>
+                  <div class="info-input setting-label-input">
+                    <label for="info">Info</label>
+                    <input type="text" name="info" id="info" />
+                  </div>
+                  <div class="info-input setting-label-input">
+                    <label for="info">Info</label>
+                    <input type="text" name="info" id="info" />
+                  </div>
+                  <button class="button save">Save</button>
                 </div>
-                <button class="button save">Save</button>
+              </div>
+            </div>
+            <div class="setting-content">
+              <div class="setting-section3">
+                <div class="setting-sec3-divs">
+                  <h2>User Profile</h2>
+                  <div class="setting-sec3-inner-divs">
+                    <div class="full-name-input setting-label-input">
+                      <label for="fullname">Full Name</label>
+                      <input type="text" name="fullname" id="fullname" />
+                    </div>
+                    <div class="setting-profile">
+                      <div>
+                        <span class="material-symbols-sharp"> person </span>
+                      </div>
+                      <div>
+                        <h3>John Smith</h3>
+                        <p>Welcome Setting Page</p>
+                      </div>
+                    </div>
+                    <button class="button save">Save</button>
+                  </div>
+                </div>
+                <div class="setting-sec3-divs">
+                  <h2>User Profile</h2>
+                  <div class="setting-sec3-inner-divs">
+                    <div class="email-input setting-label-input">
+                      <label for="email">Email</label>
+                      <input type="email" name="email" id="email" />
+                    </div>
+                    <div class="password-input setting-label-input">
+                      <label for="password">Password</label>
+                      <input type="password" name="password" id="password" />
+                    </div>
+                    <button class="button save">Save</button>
+                  </div>
+                </div>
+              </div>
+              <!-- Setting Section 3 ends here -->
+              <!-- Setting Section 4 starts here -->
+              <div class="setting-section4">
+                <h2>Personal Information</h2>
+                <div class="setting-sec4-divs">
+                  <div class="info-input setting-label-input">
+                    <label for="info">Info</label>
+                    <input type="text" name="info" id="info" />
+                  </div>
+                  <div class="info-input setting-label-input">
+                    <label for="info">Info</label>
+                    <input type="text" name="info" id="info" />
+                  </div>
+                  <div class="info-input setting-label-input">
+                    <label for="info">Info</label>
+                    <input type="text" name="info" id="info" />
+                  </div>
+                  <div class="info-input setting-label-input">
+                    <label for="info">Info</label>
+                    <input type="text" name="info" id="info" />
+                  </div>
+                  <div class="info-input setting-label-input">
+                    <label for="info">Info</label>
+                    <input type="text" name="info" id="info" />
+                  </div>
+                  <div class="info-input setting-label-input">
+                    <label for="info">Info</label>
+                    <input type="text" name="info" id="info" />
+                  </div>
+                  <button class="button save">Save</button>
+                </div>
+              </div>
+            </div>
+            <div class="setting-content">
+              <div class="setting-section3">
+                <div class="setting-sec3-divs">
+                  <h2>User Profile</h2>
+                  <div class="setting-sec3-inner-divs">
+                    <div class="full-name-input setting-label-input">
+                      <label for="fullname">Full Name</label>
+                      <input type="text" name="fullname" id="fullname" />
+                    </div>
+                    <div class="setting-profile">
+                      <div>
+                        <span class="material-symbols-sharp"> person </span>
+                      </div>
+                      <div>
+                        <h3>John Smith</h3>
+                        <p>Welcome Setting Page</p>
+                      </div>
+                    </div>
+                    <button class="button save">Save</button>
+                  </div>
+                </div>
+                <div class="setting-sec3-divs">
+                  <h2>User Profile</h2>
+                  <div class="setting-sec3-inner-divs">
+                    <div class="email-input setting-label-input">
+                      <label for="email">Email</label>
+                      <input type="email" name="email" id="email" />
+                    </div>
+                    <div class="password-input setting-label-input">
+                      <label for="password">Password</label>
+                      <input type="password" name="password" id="password" />
+                    </div>
+                    <button class="button save">Save</button>
+                  </div>
+                </div>
+              </div>
+              <!-- Setting Section 3 ends here -->
+              <!-- Setting Section 4 starts here -->
+              <div class="setting-section4">
+                <h2>Personal Information</h2>
+                <div class="setting-sec4-divs">
+                  <div class="info-input setting-label-input">
+                    <label for="info">Info</label>
+                    <input type="text" name="info" id="info" />
+                  </div>
+                  <div class="info-input setting-label-input">
+                    <label for="info">Info</label>
+                    <input type="text" name="info" id="info" />
+                  </div>
+                  <div class="info-input setting-label-input">
+                    <label for="info">Info</label>
+                    <input type="text" name="info" id="info" />
+                  </div>
+                  <div class="info-input setting-label-input">
+                    <label for="info">Info</label>
+                    <input type="text" name="info" id="info" />
+                  </div>
+                  <div class="info-input setting-label-input">
+                    <label for="info">Info</label>
+                    <input type="text" name="info" id="info" />
+                  </div>
+                  <div class="info-input setting-label-input">
+                    <label for="info">Info</label>
+                    <input type="text" name="info" id="info" />
+                  </div>
+                  <button class="button save">Save</button>
+                </div>
+              </div>
+            </div>
+            <div class="setting-content">
+              <div class="setting-section3">
+                <div class="setting-sec3-divs">
+                  <h2>User Profile</h2>
+                  <div class="setting-sec3-inner-divs">
+                    <div class="full-name-input setting-label-input">
+                      <label for="fullname">Full Name</label>
+                      <input type="text" name="fullname" id="fullname" />
+                    </div>
+                    <div class="setting-profile">
+                      <div>
+                        <span class="material-symbols-sharp"> person </span>
+                      </div>
+                      <div>
+                        <h3>John Smith</h3>
+                        <p>Welcome Setting Page</p>
+                      </div>
+                    </div>
+                    <button class="button save">Save</button>
+                  </div>
+                </div>
+                <div class="setting-sec3-divs">
+                  <h2>User Profile</h2>
+                  <div class="setting-sec3-inner-divs">
+                    <div class="email-input setting-label-input">
+                      <label for="email">Email</label>
+                      <input type="email" name="email" id="email" />
+                    </div>
+                    <div class="password-input setting-label-input">
+                      <label for="password">Password</label>
+                      <input type="password" name="password" id="password" />
+                    </div>
+                    <button class="button save">Save</button>
+                  </div>
+                </div>
+              </div>
+              <!-- Setting Section 3 ends here -->
+              <!-- Setting Section 4 starts here -->
+              <div class="setting-section4">
+                <h2>Personal Information</h2>
+                <div class="setting-sec4-divs">
+                  <div class="info-input setting-label-input">
+                    <label for="info">Info</label>
+                    <input type="text" name="info" id="info" />
+                  </div>
+                  <div class="info-input setting-label-input">
+                    <label for="info">Info</label>
+                    <input type="text" name="info" id="info" />
+                  </div>
+                  <div class="info-input setting-label-input">
+                    <label for="info">Info</label>
+                    <input type="text" name="info" id="info" />
+                  </div>
+                  <div class="info-input setting-label-input">
+                    <label for="info">Info</label>
+                    <input type="text" name="info" id="info" />
+                  </div>
+                  <div class="info-input setting-label-input">
+                    <label for="info">Info</label>
+                    <input type="text" name="info" id="info" />
+                  </div>
+                  <div class="info-input setting-label-input">
+                    <label for="info">Info</label>
+                    <input type="text" name="info" id="info" />
+                  </div>
+                  <button class="button save">Save</button>
+                </div>
               </div>
             </div>
             <!-- Setting Section 4 ends here -->
