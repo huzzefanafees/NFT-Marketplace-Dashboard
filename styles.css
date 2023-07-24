@@ -697,6 +697,7 @@ h1 {
 }
 .profile-bought .card {
   position: relative;
+  z-index: -1;
 }
 .profile-bought-bottom {
   display: flex;
