@@ -53,16 +53,6 @@
 html {
   font-size: 14px;
 }
-body {
-  max-width: 1440px;
-  width: 100%;
-  margin: 0 auto;
-  font-family: "Poppins", sans-serif;
-  font-size: 0.88rem;
-  background-color: var(--color-background);
-  user-select: none;
-  overflow-x: hidden;
-}
 
 a {
   color: var(--color-black);
@@ -118,6 +108,17 @@ h1 {
   display: grid;
   width: 100%;
   grid-template-columns: 10rem 1fr;
+  margin: 0 auto;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.88rem;
+  background-color: var(--color-background);
+  user-select: none;
+  overflow-x: hidden;
+}
+.wrapper {
+  max-width: 1440px;
+  width: 90%;
+  margin: 0 auto;
 }
 .aside {
   display: flex;
@@ -127,7 +128,7 @@ h1 {
   background-color: var(--color-white);
   width: 10rem;
   height: 100vh;
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
 }
@@ -144,10 +145,12 @@ h1 {
 .aside a:last-child h3 {
   color: var(--color-grey);
 }
-.tab-btn.active, .tab-btn.active h3 {
+.tab-btn.active,
+.tab-btn.active h3 {
   color: var(--colorbtn-primary);
 }
-.tab-btn, .tab-btn h3 {
+.tab-btn,
+.tab-btn h3 {
   color: var(--color-grey);
 }
 
@@ -158,9 +161,11 @@ h1 {
 .icon {
   margin-top: 3rem;
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
   gap: 0.5rem;
+  width: 100%;
+  padding: 0 1rem;
 }
 /* Top section CSS Starts here */
 .top {
@@ -219,7 +224,7 @@ h1 {
   margin-top: 4rem;
 }
 .sec1-left {
-  background-image: url(images/Discover.png);
+  background-image: url(../images/Discover.png);
   color: white;
   padding: var(--card-padding);
   background-size: cover;
@@ -319,7 +324,7 @@ h1 {
 }
 .sec2-a button.active {
   background-color: var(--colorbtn-primary);
-  color: var(--color-white);
+  color: white;
   width: 4rem;
   height: 1.5rem;
   text-align: center;
@@ -335,9 +340,31 @@ h1 {
   gap: 1rem;
   margin: 2rem 0;
 }
-.cards-all.active{
+.fade-in {
+  -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+.cards-all.active {
   display: grid;
 }
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .cards-all .card {
   padding: var(--padding-1);
   background-color: var(--color-white);
@@ -416,14 +443,15 @@ h1 {
 #myChart {
   width: 100% !important;
   height: 18rem !important;
+  margin: 0 auto;
 }
 .sec3-middle h2,
 .sec3-right h2 {
-  color: white;
+  color: var(--color-black);
 }
 #myChart1 {
   width: 100% !important;
-  height: auto !important;
+  height: 16rem !important;
   margin: 0 auto;
 }
 .label-container {
@@ -513,10 +541,9 @@ h1 {
 .sec5-top,
 .sec5-main {
   display: grid;
-  grid-template-columns: minmax(300px, 1.5fr) minmax(150px, 1fr) minmax(
-      150px,
-      1fr
-    ) minmax(150px, 1fr) minmax(200px, 1.5fr);
+  grid-template-columns:
+    minmax(300px, 1.5fr) minmax(150px, 1fr) minmax(150px, 1fr)
+    minmax(150px, 1fr) minmax(200px, 1.5fr);
   margin-top: 1rem;
 }
 .sec5-main {
@@ -664,8 +691,13 @@ h1 {
 .profile-sec2-inner-divs {
   display: flex;
   align-items: center;
-  gap: 0.7rem;
-  padding: 0.4rem 0;
+  gap: 1rem;
+}
+.profile-sec2-inner-divs1 {
+  padding: 0.4rem 0 0.8rem;
+}
+.profile-sec2-inner-divs2 {
+  padding: 0.8rem 0 0.4rem;
 }
 .profile-border-bottom {
   border-bottom: 1px solid rgba(153, 148, 170, 0.5);
@@ -814,6 +846,9 @@ h1 {
   .aside h3 {
     display: none;
   }
+  .icon {
+    width: auto;
+  }
   .section1 {
     grid-template-columns: 1fr;
   }
@@ -880,9 +915,14 @@ h1 {
   }
   .top-container {
     position: fixed;
-    width: 90%;
+    width: 100%;
     background-color: var(--color-background);
     padding-bottom: 0.3rem;
+    z-index: 1;
+  }
+  .top {
+    width: 90%;
+    /* margin: 0 auto; */
   }
   .content-box {
     padding-top: 2rem;
@@ -898,6 +938,11 @@ h1 {
     bottom: 0;
     left: 0;
     background-color: var(--color-white);
+    z-index: 1;
+  }
+  .content {
+    position: relative;
+    z-index: 0;
   }
   .aside {
     display: flex;
@@ -976,7 +1021,7 @@ h1 {
   }
 }
 
-@media (max-width: 576px){
+@media (max-width: 576px) {
   .top {
     margin-top: 1rem;
   }
@@ -996,5 +1041,10 @@ h1 {
   }
   .top-profile-avatar {
     width: 2.5rem;
+  }
+}
+@media (min-width: 1440px) {
+  #myChart1 {
+    width: 80% !important;
   }
 }
